@@ -316,7 +316,7 @@ section { position: relative; }
   border-bottom: 1.5px solid rgba(73, 12, 20, 0.2);
   font-weight: 500;
 }
-.included svg { width: 22px; flex: none; }
+.included svg { width: 22px; height: 22px; flex: none; }
 .note {
   font-size: 0.98rem;
   background: rgba(255, 244, 234, 0.6);

@@ -7,7 +7,7 @@
   --bordeaux: #490c14;
   --bordeaux-soft: rgba(73, 12, 20, 0.72);
 
-  --font-display: "Poppins", "Avenir Next", "Century Gothic", sans-serif;
+  --font-display: "TeX Gyre Adventor", "Avant Garde", "Century Gothic", sans-serif;
   --font-body: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
   --font-hand: "Caveat", "Bradley Hand", cursive;
 
@@ -26,6 +26,7 @@ body {
   font-size: 18px;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
+  font-synthesis: none;
 }
 img, svg { display: block; max-width: 100%; }
 a { color: inherit; }
@@ -40,7 +41,7 @@ a { color: inherit; }
 /* ---------- typografia ---------- */
 h1, h2, h3 {
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 0.98;
   letter-spacing: -0.035em;
   margin: 0;
@@ -111,7 +112,7 @@ h3 { font-size: clamp(1.6rem, 3vw, 2.1rem); letter-spacing: -0.025em; }
 }
 .logo {
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 700;
   font-size: 1.7rem;
   letter-spacing: -0.05em;
   text-decoration: none;
@@ -258,7 +259,7 @@ section { position: relative; }
   background: var(--bordeaux);
   color: var(--cream);
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 18px;
 }
 .steps h3 { font-size: 1.35rem; margin-bottom: 10px; line-height: 1.1; }
@@ -302,7 +303,7 @@ section { position: relative; }
 }
 .price strong {
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 700;
   font-size: clamp(4rem, 9vw, 6.5rem);
   letter-spacing: -0.05em;
   line-height: 1;
@@ -397,7 +398,7 @@ fieldset.field { border: 0; padding: 0; margin: 0 0 16px; }
   .tickets-grid { grid-template-columns: 1fr; }
 }
 
-/* čo je unwait. */
+/* čo je unwaiting */
 .manifesto {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
@@ -452,7 +453,7 @@ fieldset.field { border: 0; padding: 0; margin: 0 0 16px; }
   padding: 0;
   margin: 0;
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 700;
   font-size: clamp(2.8rem, 8vw, 6rem);
   line-height: 0.98;
   letter-spacing: -0.04em;

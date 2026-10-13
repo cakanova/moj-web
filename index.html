@@ -3,48 +3,323 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>unwaiting</title>
-  <meta name="description" content="Pripravujeme novú webovú stránku.">
-  <style>
-    :root {
-      --bg: #f6f3ee;
-      --text: #1f1d1a;
-      --muted: #6b665e;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #161514;
-        --text: #f1ede6;
-        --muted: #a39d93;
-      }
-    }
-    * { box-sizing: border-box; margin: 0; }
-    body {
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      padding: 24px;
-      background: var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      text-align: center;
-    }
-    h1 {
-      font-size: clamp(2.5rem, 8vw, 4.5rem);
-      font-weight: 600;
-      letter-spacing: -0.03em;
-    }
-    p {
-      margin-top: 12px;
-      font-size: 1.125rem;
-      color: var(--muted);
-    }
-  </style>
+  <title>unwait. – Single. Not on hold.</title>
+  <meta name="description" content="Komunita a eventy pre single ľudí od 28 do 43 rokov. Menej scrollovania a swipovania. Viac skutočnej zábavy. Prvý večer v Prešove – Kamoš ťa predá.">
+  <meta name="theme-color" content="#fff4ea">
+  <link rel="preload" href="fonts/poppins-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <!-- Opakované kresby -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="swoosh" viewBox="0 0 260 30">
+        <path d="M6 20 C 60 6, 140 4, 252 10" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+        <path d="M22 26 C 90 16, 160 15, 230 19" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="heart" viewBox="0 0 40 40">
+        <path d="M20 34 C 8 25, 3 18, 5 11 C 7 5, 15 4, 20 12 C 25 4, 33 5, 35 11 C 37 18, 32 25, 20 34 Z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="sparkle" viewBox="0 0 40 40">
+        <path d="M20 2 C 21 14, 26 19, 38 20 C 26 21, 21 26, 20 38 C 19 26, 14 21, 2 20 C 14 19, 19 14, 20 2 Z" fill="#d7dc38" stroke="#490c14" stroke-width="2.4" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="check" viewBox="0 0 24 24">
+        <rect x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2.2"/>
+        <path d="M7 12.5 L10.5 16 L17 8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="#" class="logo" aria-label="unwait. – domov">unwait.</a>
+      <nav class="nav" aria-label="Hlavná navigácia">
+        <a href="#event">Event</a>
+        <a href="#o-nas">Čo je unwait.</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#listky" class="btn btn-primary">Kúpiť lístok</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
-    <h1>unwaiting</h1>
-    <p>Pripravujeme novú stránku.</p>
+
+    <!-- EVENT -->
+    <section class="hero" id="event">
+      <div class="wrap">
+        <div>
+          <p class="label">Prvý unwait. večer · Prešov</p>
+          <h1>Kamoš ťa predá.</h1>
+          <p class="hand hand-note">
+            a ty si len užívaš večer
+            <svg width="30" height="30" aria-hidden="true"><use href="#heart"/></svg>
+          </p>
+          <p class="lead">
+            Večer, kde 10 single ľudí predstavia na pódiu ich najlepší kamaráti.
+            5 žien, 5 mužov, veľa humoru a sála plná ľudí, ktorí na „raz“ nečakajú.
+          </p>
+
+          <ul class="facts">
+            <li><p class="label">Kedy</p><strong>Čoskoro</strong></li>
+            <li><p class="label">Kde</p><strong>Wave CNZ, Sídlisko III, Prešov</strong></li>
+            <li><p class="label">Vstup</p><strong>16 €</strong></li>
+            <li><p class="label">Pre koho</p><strong>Single 28 – 43</strong></li>
+            <li><p class="label">Kapacita</p><strong>60 miest</strong></li>
+          </ul>
+
+          <div class="actions">
+            <a href="#listky" class="btn btn-primary">Chcem lístok</a>
+            <a href="#ako-to-funguje" class="btn btn-outline">Ako to funguje?</a>
+          </div>
+        </div>
+
+        <div class="ticket-art" aria-hidden="true">
+          <div class="ticket-stage">
+            <svg class="sparkle s1"><use href="#sparkle"/></svg>
+            <svg class="sparkle s2"><use href="#sparkle"/></svg>
+            <div class="ticket">
+              <div>
+                <h3>1 lístok<br>= zážitok.</h3>
+                <span class="logo">unwait.</span>
+              </div>
+              <div class="barcode"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AKO TO FUNGUJE -->
+    <section class="section bg-lav" id="ako-to-funguje">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="label">Ako to funguje</p>
+          <h2>Kamoš vie,<br>aký si naozaj.</h2>
+          <p class="lead">
+            Žiadne swipovanie, žiadne vylepšené profily. Predstaví ťa niekto,
+            kto ťa pozná najlepšie – s láskou, humorom a trochou hanby.
+          </p>
+        </div>
+
+        <ol class="steps">
+          <li>
+            <h3>Kamarát ťa prihlási</h3>
+            <p>Alebo ty jeho. Na pódiu bude 10 odvážnych – 5 žien a 5 mužov.</p>
+          </li>
+          <li>
+            <h3>Pár minút na pódiu</h3>
+            <p>Kamarát ťa predstaví po svojom. Vtipne, úprimne, bez trápnosti.</p>
+          </li>
+          <li>
+            <h3>Hľadisko fandí</h3>
+            <p>Ostatní sedia v sále, smejú sa, fandia a spoznávajú nových ľudí.</p>
+          </li>
+          <li>
+            <h3>A potom večer pokračuje</h3>
+            <p>Welcome drink, občerstvenie, program, súťaž a jedno prekvapenie.</p>
+          </li>
+        </ol>
+
+        <div class="stage-cta">
+          <div>
+            <h3>Chceš ísť na pódium?</h3>
+            <p>
+              Prihlášky pre 10 odvážnych spúšťame čoskoro. Ako má prezentácia vyzerať
+              a čo treba vyplniť, nájdeš na samostatnej stránke.
+            </p>
+          </div>
+          <span class="btn btn-outline" aria-disabled="true">Čoskoro</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- LÍSTKY -->
+    <section class="section bg-lime" id="listky">
+      <div class="wrap tickets-grid">
+        <div>
+          <p class="label">Lístky</p>
+          <h2>Nemáš s kým ísť?<br>Práve preto príď.</h2>
+          <div class="price"><strong>16 €</strong><span>/ osoba</span></div>
+
+          <ul class="included">
+            <li><svg aria-hidden="true"><use href="#check"/></svg> Welcome drink</li>
+            <li><svg aria-hidden="true"><use href="#check"/></svg> Malé občerstvenie</li>
+            <li><svg aria-hidden="true"><use href="#check"/></svg> Program celý večer</li>
+            <li><svg aria-hidden="true"><use href="#check"/></svg> Súťaž</li>
+            <li><svg aria-hidden="true"><use href="#check"/></svg> Prekvapenie</li>
+          </ul>
+
+          <p class="note">
+            Miest je len 60 a strážime vyvážený pomer žien a mužov.
+            Preto sa najprv prihlásiš cez formulár. My ti potvrdíme miesto
+            a pošleme údaje na platbu prevodom.
+          </p>
+        </div>
+
+        <div class="form-card">
+          <h3>Chcem lístok</h3>
+          <p>Vyplň pár údajov a ozveme sa ti e-mailom.</p>
+
+          <!-- TODO: napojiť formulár na službu na zbieranie prihlášok (napr. Tally / Formspree) -->
+          <form id="ticket-form" novalidate>
+            <div class="field">
+              <label for="name">Meno a priezvisko</label>
+              <input type="text" id="name" name="meno" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="phone">Telefón</label>
+              <input type="tel" id="phone" name="telefon" autocomplete="tel" required>
+            </div>
+            <fieldset class="field">
+              <legend>Som</legend>
+              <div class="choice-row">
+                <label class="choice"><input type="radio" name="pohlavie" value="zena" required><span>Žena</span></label>
+                <label class="choice"><input type="radio" name="pohlavie" value="muz"><span>Muž</span></label>
+              </div>
+            </fieldset>
+            <label class="check">
+              <input type="checkbox" name="vek" required>
+              <span>Mám 28 – 43 rokov a som single.</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="gdpr" required>
+              <span>Súhlasím so spracovaním osobných údajov za účelom rezervácie lístka. <a href="#">Viac info</a></span>
+            </label>
+            <button type="submit" class="btn btn-primary">Chcem lístok</button>
+            <p class="form-status" id="form-status" role="status" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ČO JE UNWAIT. -->
+    <section class="section" id="o-nas">
+      <div class="wrap">
+        <div class="manifesto">
+          <div>
+            <p class="label">Čo je unwait.</p>
+            <h2>Single.<br>Not on hold.</h2>
+            <svg class="swoosh accent-lav" viewBox="0 0 260 30" aria-hidden="true"><use href="#swoosh"/></svg>
+          </div>
+          <div>
+            <p class="slogan">Menej scrollovania a swipovania. Viac skutočnej zábavy.</p>
+            <p>
+              unwait. je komunita pre single ľudí, ktorí nečakajú na ideálny deň,
+              správnu príležitosť ani na +1. Žijeme svoj život najlepšie, ako vieme –
+              s priateľmi, so snami a s láskou k sebe.
+            </p>
+            <p>
+              Single obdobie nie je čakáreň. Je to čas spoznať nových ľudí,
+              rásť a robiť veci, ktoré ťa bavia. Teraz, nie „raz“.
+            </p>
+          </div>
+        </div>
+
+        <div class="pillars">
+          <article class="pillar bg-lav">
+            <p class="label">Komunita</p>
+            <div>
+              <h3>Niekam patríš.</h3>
+              <p>Ľudia, ktorí sú na tom rovnako. Noví priatelia, nové plány, nové príbehy.</p>
+            </div>
+          </article>
+          <article class="pillar bg-lime">
+            <p class="label">Sebahodnota</p>
+            <div>
+              <h3>1 je dosť.</h3>
+              <p>Vieš, kto si a čo chceš. Tvoja hodnota nestojí na tom, či máš vzťah.</p>
+            </div>
+          </article>
+          <article class="pillar bg-dark">
+            <p class="label">Život</p>
+            <div>
+              <h3>Žiješ <span class="accent-lime">teraz.</span></h3>
+              <p>Sny, vášne, zážitky. Single obdobie využívaš naplno – pre seba.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ČO CHYSTÁME -->
+    <section class="section bg-dark">
+      <div class="wrap plans">
+        <div>
+          <p class="label">Čo chystáme</p>
+          <ul class="plans-list">
+            <li>Eventy</li>
+            <li>Workshopy</li>
+            <li>Webináre</li>
+            <li>Stretnutia</li>
+            <li class="accent-lime">A oveľa viac.</li>
+          </ul>
+        </div>
+        <div class="plans-side">
+          <p class="hand">Good people.<br>Better plans.</p>
+          <p class="label">Skutoční ľudia.<br>Skutočné plány.<br>Single. Not on hold.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VÝHOVORKY -->
+    <section class="section excuses">
+      <div class="wrap">
+        <p class="hand struck">Nemám s kým ísť.</p>
+        <p class="hand struck">Možno nabudúce.</p>
+        <span class="hand go">Idem.</span>
+        <p class="label">Plány pre ľudí, ktorí nečakajú.</p>
+        <a href="#listky" class="btn btn-primary">Kúpiť lístok</a>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="section bg-lav" id="kontakt">
+      <div class="wrap contact">
+        <div>
+          <p class="label">Kontakt</p>
+          <h2>Napíš nám.</h2>
+          <p class="lead">Máš otázku k eventu, nápad alebo chceš spolupracovať? Ozvi sa.</p>
+        </div>
+        <div class="contact-card">
+          <dl>
+            <div><dt>E-mail</dt><dd>doplníme čoskoro</dd></div>
+            <div><dt>Instagram</dt><dd>čoskoro</dd></div>
+            <div><dt>Event</dt><dd>Wave CNZ, Sídlisko III, Prešov</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <span class="logo">unwait.</span>
+        <p class="label">Single. Not on hold.</p>
+      </div>
+      <small>© 2026 unwait. · <a href="#">Ochrana osobných údajov</a></small>
+    </div>
+  </footer>
+
+  <script>
+    // Formulár zatiaľ nie je napojený – iba skontroluje údaje a zobrazí info.
+    const form = document.getElementById('ticket-form');
+    const status = document.getElementById('form-status');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!form.checkValidity()) {
+        status.textContent = 'Prosím, vyplň všetky údaje a potvrď súhlasy.';
+      } else {
+        status.textContent = 'Ďakujeme! Predaj lístkov spúšťame čoskoro – formulár zatiaľ nie je spustený.';
+      }
+      status.hidden = false;
+    });
+  </script>
 </body>
 </html>

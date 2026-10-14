@@ -753,3 +753,4 @@ h1, h2, h3, .logo, .plans-list, .price strong {
 .ticket-title { font-size: clamp(2.4rem, 6vw, 3.6rem); margin-bottom: 8px; }
 .ticket-facts { margin-bottom: clamp(28px, 4vw, 44px); }
 .ticket-only .mini-steps.big { margin-top: 0; }
+.included-label { margin: 28px 0 4px; } .included-label + .included { margin-top: 0; }

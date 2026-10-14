@@ -908,3 +908,6 @@ h1, h2, h3, .logo, .plans-list, .price strong {
   .site-header.menu-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
   .logo img { height: 32px; }
 }
+.hero-note { display: block; } .hero-note svg { display: inline-block; vertical-align: -6px; }
+@media (max-width: 520px) { .hero .hero-note { font-size: 1.45rem; } }
+.hero .hand-note.hero-note { display: block; }

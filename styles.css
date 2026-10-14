@@ -535,3 +535,8 @@ h1, h2, h3, .logo, .plans-list, .price strong {
   -webkit-text-stroke: 0.018em currentColor;
   paint-order: stroke fill;
 }
+
+/* logo ako obrázok */
+.logo img { display: block; height: 38px; width: auto; }
+.site-footer .logo img { height: 46px; }
+.ticket .logo img { height: 24px; }

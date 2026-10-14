@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Prihláška – Môj kamoš je single | unwaiting</title>
-  <meta name="description" content="Prihlás sa na večer Môj kamoš je single v Prešove – Wave CNZ, 16 €, pre single ľudí od 28 do 43 rokov.">
+  <title>Prihláška na pódium – Môj kamoš je single | unwaiting</title>
+  <meta name="description" content="Prihlás kamoša alebo seba na večer Môj kamoš je single v Prešove. Hľadáme 5 žien a 5 mužov vo veku 28 – 43 rokov.">
   <meta name="theme-color" content="#fff4ea">
   <link rel="preload" href="fonts/texgyreadventor-bold.otf" as="font" type="font/otf" crossorigin>
   <link rel="icon" type="image/png" href="favicon.png">
@@ -13,7 +13,6 @@
 </head>
 <body>
 
-  <!-- Opakované kresby -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <defs>
       <symbol id="swoosh" viewBox="0 0 260 30">
@@ -23,12 +22,13 @@
       <symbol id="heart" viewBox="0 0 40 40">
         <path d="M20 34 C 8 25, 3 18, 5 11 C 7 5, 15 4, 20 12 C 25 4, 33 5, 35 11 C 37 18, 32 25, 20 34 Z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
       </symbol>
-      <symbol id="sparkle" viewBox="0 0 40 40">
-        <path d="M20 2 C 21 14, 26 19, 38 20 C 26 21, 21 26, 20 38 C 19 26, 14 21, 2 20 C 14 19, 19 14, 20 2 Z" fill="#d7dc38" stroke="#490c14" stroke-width="2.4" stroke-linejoin="round"/>
-      </symbol>
       <symbol id="check" viewBox="0 0 24 24">
         <rect x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2.2"/>
         <path d="M7 12.5 L10.5 16 L17 8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="cross" viewBox="0 0 24 24">
+        <rect x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2.2"/>
+        <path d="M8 8 L16 16 M16 8 L8 16" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
       </symbol>
     </defs>
   </svg>
@@ -41,7 +41,7 @@
         <a href="./#o-nas">Čo je unwaiting</a>
         <a href="prihlaska.html">Prihláška</a>
         <a href="./#kontakt">Kontakt</a>
-        <a href="#formular" class="btn btn-primary">Kúpiť lístok</a>
+        <a href="listok.html" class="btn btn-primary">Kúpiť lístok</a>
       </nav>
     </div>
   </header>
@@ -49,57 +49,113 @@
   <main>
 
     <section class="hero">
-      <div class="wrap" style="grid-template-columns: 1fr;">
+      <div class="wrap">
         <div>
           <p class="label">Prihláška · Môj kamoš je single</p>
-          <h1>Prihlás sa<br>na večer.</h1>
+          <h1>Prihlás kamoša.<br>Alebo seba.</h1>
           <svg class="swoosh accent-lav" viewBox="0 0 260 30" aria-hidden="true"><use href="#swoosh"/></svg>
           <p class="lead">
-            Miest je 60 a strážime vyvážený pomer žien a mužov. Preto sa najprv prihlásiš
-            cez formulár – my ti potvrdíme miesto a pošleme údaje na platbu.
+            Na pódiu bude 10 single ľudí – 5 žien a 5 mužov. Každého predstaví kamarát,
+            ktorý ho pozná najlepšie. Ty nemusíš robiť nič, len byť sebou.
+            O zvyšok sa postaráme spolu.
           </p>
           <ul class="facts">
-            <li><p class="label">Kedy</p><strong>Čoskoro</strong></li>
-            <li><p class="label">Kde</p><strong>Wave CNZ, Sídlisko III, Prešov</strong></li>
-            <li><p class="label">Vstup</p><strong>16 €</strong></li>
-            <li><p class="label">Pre koho</p><strong>Single 28 – 43</strong></li>
+            <li><p class="label">Na pódiu</p><strong>5 žien + 5 mužov</strong></li>
+            <li><p class="label">Prezentácia</p><strong>max. 5 minút</strong></li>
+            <li><p class="label">Vek</p><strong>28 – 43</strong></li>
+            <li><p class="label">Lístok</p><strong>16 € / kamarát zdarma</strong></li>
           </ul>
+          <div class="actions">
+            <a href="#prihlaska" class="btn btn-primary">Chcem sa prihlásiť</a>
+            <a href="#pravidla" class="btn btn-outline">Pravidlá prezentácie</a>
+          </div>
+        </div>
+        <div class="bubble-art" aria-hidden="true">
+          <img src="img/kresby/bublina.webp" alt="" width="700" height="572">
+          <p class="hand">Toto je môj kamoš.<br>Je single<br>a je skvelý.</p>
         </div>
       </div>
     </section>
 
-    <section class="section bg-lime" id="formular">
+    <section class="section bg-lav">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="label">Ako to prebieha</p>
+          <h2>Od prihlášky<br>po pódium.</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <h3>Vyplníš prihlášku</h3>
+            <p>Môže ju poslať single človek aj kamarát. Dôležité je, aby o tom vedeli obaja.</p>
+          </li>
+          <li>
+            <h3>Ozveme sa ti</h3>
+            <p>Ak je ešte voľné miesto, potvrdíme ti ho a dohodneme si krátku konzultáciu.</p>
+          </li>
+          <li>
+            <h3>Pripravíme to spolu</h3>
+            <p>Pomôžeme s textom aj grafikou, aby sa kamoš predstavoval ľahko.</p>
+          </li>
+          <li>
+            <h3>Schválime a ideš</h3>
+            <p>Prezentáciu si pred eventom spolu prejdeme. Potom už len pódium.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="pravidla">
       <div class="wrap tickets-grid">
         <div>
-          <p class="label">Ako to funguje</p>
-          <h2>4 kroky<br>k lístku.</h2>
-          <ol class="mini-steps big">
-            <li>Vyplníš prihlášku</li>
-            <li>Potvrdíme ti miesto e-mailom</li>
-            <li>Zaplatíš 16 € prevodom</li>
-            <li>Vidíme sa na evente!</li>
-          </ol>
+          <p class="label">Pravidlá prezentácie</p>
+          <h2>Vtipne.<br>Autenticky.<br>S rešpektom.</h2>
+          <img class="rules-art" src="img/kresby/zapisnik.webp" alt="" width="596" height="700" loading="lazy">
+          <p class="hand hand-note" style="font-size:2rem; transform:rotate(-3deg); margin-top:20px;">
+            nikto sa nemusí hanbiť
+            <svg width="30" height="30" aria-hidden="true"><use href="#heart"/></svg>
+          </p>
+        </div>
+        <div>
           <ul class="included">
-            <li><svg aria-hidden="true"><use href="#check"/></svg> Welcome drink</li>
-            <li><svg aria-hidden="true"><use href="#check"/></svg> Malé občerstvenie</li>
-            <li><svg aria-hidden="true"><use href="#check"/></svg> Program celý večer</li>
-            <li><svg aria-hidden="true"><use href="#check"/></svg> Súťaž a prekvapenie</li>
+            <li><svg aria-hidden="true"><use href="#check"/></svg> Najviac 5 minút na jednu prezentáciu</li>
+            <li><svg aria-hidden="true"><use href="#check"/></svg> Celý večer vedie moderátor</li>
+            <li><svg aria-hidden="true"><use href="#check"/></svg> Humor, príbehy, skutočné vlastnosti</li>
+            <li><svg aria-hidden="true"><use href="#check"/></svg> Fotky alebo grafika na plátne – pomôžeme</li>
+            <li><svg aria-hidden="true"><use href="#check"/></svg> Prezentácia schválená pred eventom</li>
+            <li><svg aria-hidden="true"><use href="#cross"/></svg> Nič urážlivé, trápne ani príliš intímne</li>
+            <li><svg aria-hidden="true"><use href="#cross"/></svg> Žiadne hlasovanie ani hodnotenie</li>
+          </ul>
+          <p class="note" style="background: var(--lavender);">
+            Po prezentácii nenasleduje žiadne hlasovanie ani rande na pódiu – ide ďalšia
+            prezentácia. Zoznamovanie sa deje prirodzene, počas celého večera.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-lime" id="prihlaska">
+      <div class="wrap tickets-grid">
+        <div>
+          <p class="label">Prihláška</p>
+          <h2>Ideš do toho?</h2>
+          <ul class="included">
+            <li><svg aria-hidden="true"><use href="#check"/></svg> Single, 28 – 43 rokov</li>
+            <li><svg aria-hidden="true"><use href="#check"/></svg> Kamarát, ktorý ťa predstaví</li>
+            <li><svg aria-hidden="true"><use href="#check"/></svg> Chuť zabaviť sa</li>
           </ul>
           <p class="note">
-            Event je určený pre single ľudí vo veku 28 – 43 rokov. Pár mesiacov sem-tam
-            nevadí, ale prosíme ťa o rešpekt a ohľaduplnosť ku komunite.
-            <br><br>
-            Chceš ísť na pódium? <a href="na-podium.html">Prihlás sa tu</a>.
+            Single človek na pódiu platí lístok 16 €, kamarát, ktorý ho predstavuje,
+            má vstup zdarma. Miest na pódiu je len 10 – 5 pre ženy a 5 pre mužov. Obsadzujeme ich podľa poradia prihlášok, takže neváhaj.
           </p>
         </div>
 
         <div class="form-card">
-          <h3>Chcem lístok</h3>
-          <p>Vyplň pár údajov a ozveme sa ti e-mailom.</p>
+          <h3>Prihláška na pódium</h3>
+          <p>Vyplniť ju môžeš ty aj tvoj kamarát. Ozveme sa, ak bude miesto voľné.</p>
           <iframe
-            src="https://tally.so/embed/kdDqWR?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1"
-            loading="lazy" width="100%" height="560" frameborder="0" marginheight="0" marginwidth="0"
-            title="unwaiting – lístok"></iframe>
+            src="https://tally.so/embed/aQb7jb?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1"
+            loading="lazy" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0"
+            title="unwaiting – prihláška na pódium"></iframe>
         </div>
       </div>
     </section>
@@ -109,13 +165,14 @@
   <footer class="site-footer">
     <div class="wrap">
       <div class="footer-brand">
-        <span class="logo"><img src="img/logo-unwaiting-svetle.svg" alt="unwaiting" width="918" height="230"></span>
+        <a href="./" class="logo"><img src="img/logo-unwaiting-svetle.svg" alt="unwaiting" width="918" height="230"></a>
         <p class="footer-tagline">Meet&nbsp;&nbsp; Connect&nbsp;&nbsp; Belong</p>
       </div>
       <p class="hand footer-slogan"><span class="nowrap">Menej scrollovania a swipovania</span> <span class="nowrap">= Viac skutočnej zábavy</span></p>
       <small>© 2026 unwaiting · <a href="#">Ochrana osobných údajov</a></small>
     </div>
   </footer>
+
   <!-- Tally: automatická výška formulára -->
   <script async src="https://tally.so/widgets/embed.js" onload="Tally.loadEmbeds()"></script>
 </body>

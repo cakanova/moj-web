@@ -776,4 +776,3 @@ h1, h2, h3, .logo, .plans-list, .price strong {
   margin: 32px 0 20px;
 }
 .excuses-line { font-size: 1.15rem; }
-.excuses .go { font-family: var(--font-body); font-weight: 700; letter-spacing: -0.02em; padding: 10px 40px 14px; }

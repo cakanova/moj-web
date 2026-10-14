@@ -915,3 +915,19 @@ h1, h2, h3, .logo, .plans-list, .price strong {
 /* hero nadpis – kratšie, každá veta na jednom riadku */
 .hero h1.hero-title { font-size: clamp(2.6rem, 5.4vw, 5.2rem); }
 @media (min-width: 521px) { .hero-title .line { white-space: nowrap; } }
+
+/* hero – kartičky 3 + 2, menšia fotka nižšie */
+.hero .wrap { grid-template-columns: 1.55fr 1fr; align-items: start; }
+.hero .facts { grid-template-columns: repeat(6, 1fr); }
+.hero .facts li:nth-child(-n+3) { grid-column: span 2; }
+.hero .facts li:nth-child(n+4) { grid-column: span 3; }
+.hero-photo { max-width: 380px; justify-self: end; margin-top: 90px; }
+@media (max-width: 900px) {
+  .hero .wrap { grid-template-columns: 1fr; }
+  .hero-photo { justify-self: start; margin-top: 0; }
+}
+@media (max-width: 520px) {
+  .hero .facts { grid-template-columns: 1fr 1fr; }
+  .hero .facts li:nth-child(n) { grid-column: span 1; }
+  .hero .facts li:last-child { grid-column: span 2; }
+}

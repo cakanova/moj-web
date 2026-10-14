@@ -912,3 +912,6 @@ h1, h2, h3, .logo, .plans-list, .price strong {
 @media (max-width: 520px) { .hero .hero-note { font-size: 1.45rem; } }
 .hero .hand-note.hero-note { display: block; }
 .hero h1 { word-spacing: 0.12em; }
+/* hero nadpis – kratšie, každá veta na jednom riadku */
+.hero h1.hero-title { font-size: clamp(2.6rem, 5.4vw, 5.2rem); }
+@media (min-width: 521px) { .hero-title .line { white-space: nowrap; } }

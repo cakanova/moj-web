@@ -716,3 +716,4 @@ h1, h2, h3, .logo, .plans-list, .price strong {
 .form-intro .included { margin-top: 0; }
 .form-wide { max-width: 900px; margin: 0 auto; }
 @media (max-width: 900px) { .form-intro { grid-template-columns: 1fr; } }
+.emoji { -webkit-text-stroke: 0; font-weight: 400; }

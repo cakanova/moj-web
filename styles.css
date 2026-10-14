@@ -859,3 +859,4 @@ h1, h2, h3, .logo, .plans-list, .price strong {
 .paths-punchline { max-width: 44ch; }
 .paths-punchline .accent-dark { display: inline; margin-top: 0; }
 .paths-punchline { max-width: 50ch; }
+.gallery-head-stack { display: block; } .gallery-head-stack .label { margin: 0 0 20px; }

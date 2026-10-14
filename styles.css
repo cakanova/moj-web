@@ -673,3 +673,19 @@ h1, h2, h3, .logo, .plans-list, .price strong {
 
 /* Tally formulár */
 .form-card iframe { display: block; width: 100%; min-height: 420px; border: 0; }
+
+/* päta – tri stĺpce: logo | slogan | copyright */
+.site-footer .wrap {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 32px;
+}
+.site-footer .footer-brand { justify-self: start; }
+.site-footer .footer-slogan { margin: 0; text-align: center; font-size: clamp(1.5rem, 2.2vw, 1.9rem); max-width: 30ch; }
+.site-footer small { justify-self: end; text-align: right; }
+@media (max-width: 900px) {
+  .site-footer .wrap { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+  .site-footer .footer-brand, .site-footer small { justify-self: center; text-align: center; }
+}
+.nowrap { white-space: nowrap; }

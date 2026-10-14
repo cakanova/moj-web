@@ -704,3 +704,15 @@ h1, h2, h3, .logo, .plans-list, .price strong {
 .mini-steps.big { margin: 28px 0 8px; }
 .mini-steps.big li { font-size: 1.1rem; }
 .cta-card .btn { width: 100%; }
+
+/* prihláška na pódium – formulár na celú šírku */
+.form-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(24px, 5vw, 64px);
+  align-items: start;
+  margin-bottom: clamp(32px, 5vw, 48px);
+}
+.form-intro .included { margin-top: 0; }
+.form-wide { max-width: 900px; margin: 0 auto; }
+@media (max-width: 900px) { .form-intro { grid-template-columns: 1fr; } }

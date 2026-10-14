@@ -689,3 +689,18 @@ h1, h2, h3, .logo, .plans-list, .price strong {
   .site-footer .footer-brand, .site-footer small { justify-self: center; text-align: center; }
 }
 .nowrap { white-space: nowrap; }
+
+/* kroky k lístku */
+.mini-steps { list-style: none; counter-reset: ms; padding: 0; margin: 20px 0 26px; display: grid; gap: 10px; }
+.mini-steps li { counter-increment: ms; display: flex; align-items: center; gap: 12px; font-weight: 500; }
+.mini-steps li::before {
+  content: counter(ms);
+  flex: none;
+  display: grid; place-items: center;
+  width: 32px; height: 32px; border-radius: 50%;
+  background: var(--bordeaux); color: var(--cream);
+  font-family: var(--font-display); font-weight: 700; font-size: 0.9rem;
+}
+.mini-steps.big { margin: 28px 0 8px; }
+.mini-steps.big li { font-size: 1.1rem; }
+.cta-card .btn { width: 100%; }

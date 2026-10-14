@@ -43,7 +43,7 @@ h1, h2, h3 {
   font-family: var(--font-display);
   font-weight: 700;
   line-height: 0.98;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.02em;
   margin: 0;
 }
 h1 { font-size: clamp(3.2rem, 9vw, 7rem); }
@@ -532,6 +532,6 @@ fieldset.field { border: 0; padding: 0; margin: 0 0 16px; }
 
 /* TeX Gyre Adventor má iba rez Bold – nadpisy jemne zhrubneme obrysom */
 h1, h2, h3, .logo, .plans-list, .price strong {
-  -webkit-text-stroke: 0.035em currentColor;
+  -webkit-text-stroke: 0.018em currentColor;
   paint-order: stroke fill;
 }

@@ -598,3 +598,60 @@ h1, h2, h3, .logo, .plans-list, .price strong {
   .gallery .g-wide { grid-column: span 1; }
   .gallery img:last-child { grid-column: span 2; }
 }
+
+/* kreslené grafiky */
+.badge {
+  display: inline-grid;
+  place-items: center;
+  background: var(--cream);
+  border-radius: 50%;
+}
+.badge img { width: 70%; height: auto; }
+
+.price { position: relative; }
+.price-art { margin-left: auto; display: flex; align-items: flex-end; gap: 6px; }
+.price-art img { height: clamp(90px, 11vw, 140px); width: auto; }
+.price-art img:first-child { transform: rotate(-8deg); }
+
+.pillar { position: relative; }
+.pillar-art {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: clamp(96px, 10vw, 130px);
+  height: auto;
+}
+.pillar-art.badge { width: clamp(110px, 11vw, 140px); aspect-ratio: 1; }
+
+.plans-art { width: 170px; aspect-ratio: 1; margin: 0 0 24px auto; transform: rotate(6deg); }
+@media (max-width: 760px) { .plans-art { margin-left: 0; } }
+
+.excuses-art { width: min(320px, 70%); height: auto; margin: 0 auto 28px; transform: rotate(-4deg); }
+
+.contact-art { width: min(260px, 60%); height: auto; margin-top: 28px; }
+
+/* podstránka Na pódium */
+.hero .wrap > .bubble-art { position: relative; max-width: 440px; justify-self: center; }
+.bubble-art img { width: 100%; height: auto; }
+.bubble-art .hand {
+  position: absolute;
+  inset: 16% 12% 34% 16%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-size: clamp(1.5rem, 2.6vw, 2.2rem);
+  transform: rotate(-4deg);
+  margin: 0;
+}
+.rules-art { width: 150px; height: auto; margin: 28px 0 0; transform: rotate(-5deg); }
+
+/* úpravy rozloženia kresieb */
+.price strong, .price > span:not(.price-art) { white-space: nowrap; }
+.price-art { flex: none; }
+.pillar { min-height: 400px; }
+.pillar-art { width: clamp(90px, 9vw, 120px); }
+.pillar-art.badge { width: clamp(100px, 10vw, 128px); }
+@media (max-width: 900px) {
+  .pillar { min-height: 0; }
+  .pillar-art { position: static; margin-left: auto; }
+}

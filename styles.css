@@ -763,3 +763,4 @@ h1, h2, h3, .logo, .plans-list, .price strong {
   -webkit-text-stroke: 0.018em currentColor;
   paint-order: stroke fill;
 }
+.included-label { font-family: var(--font-body); font-weight: 700; font-size: 1.35rem; letter-spacing: 0; -webkit-text-stroke: 0; }

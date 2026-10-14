@@ -857,3 +857,4 @@ h1, h2, h3, .logo, .plans-list, .price strong {
 .paths-punchline .accent-dark { display: block; margin-top: 6px; }
 @media (max-width: 760px) { .paths { grid-template-columns: 1fr; } }
 .paths-punchline { max-width: 44ch; }
+.paths-punchline .accent-dark { display: inline; margin-top: 0; }

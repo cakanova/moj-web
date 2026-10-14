@@ -745,3 +745,4 @@ h1, h2, h3, .logo, .plans-list, .price strong {
 .after-form .btn { border-color: var(--lime); background: var(--lime); color: var(--bordeaux); }
 .after-form .small { margin: 18px 0 0; opacity: 0.85; }
 .after-form a:not(.btn) { color: var(--cream); font-weight: 700; text-underline-offset: 3px; }
+.contact-card dd a { text-decoration: none; } .contact-card dd a:hover { text-decoration: underline; text-underline-offset: 3px; }

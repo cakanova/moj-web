@@ -751,3 +751,5 @@ h1, h2, h3, .logo, .plans-list, .price strong {
 .ticket-only { background: var(--lime); min-height: calc(100vh - 72px); }
 .ticket-only .form-card { max-width: 640px; }
 .ticket-title { font-size: clamp(2.4rem, 6vw, 3.6rem); margin-bottom: 8px; }
+.ticket-facts { margin-bottom: clamp(28px, 4vw, 44px); }
+.ticket-only .mini-steps.big { margin-top: 0; }

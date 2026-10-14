@@ -911,3 +911,4 @@ h1, h2, h3, .logo, .plans-list, .price strong {
 .hero-note { display: block; } .hero-note svg { display: inline-block; vertical-align: -6px; }
 @media (max-width: 520px) { .hero .hero-note { font-size: 1.45rem; } }
 .hero .hand-note.hero-note { display: block; }
+.hero h1 { word-spacing: 0.12em; }

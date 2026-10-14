@@ -821,3 +821,6 @@ h1, h2, h3, .logo, .plans-list, .price strong {
 /* kresby na kartách – rovnaká výška */
 .pillar .pillar-art { width: auto; height: clamp(90px, 9vw, 115px); }
 .price-right { margin: 0 0 18px; }
+.price-small { margin: 32px 0 4px; }
+.price-small strong { font-size: clamp(2.6rem, 5vw, 3.6rem); }
+.included-right { margin-top: 8px; }

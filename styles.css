@@ -746,3 +746,8 @@ h1, h2, h3, .logo, .plans-list, .price strong {
 .after-form .small { margin: 18px 0 0; opacity: 0.85; }
 .after-form a:not(.btn) { color: var(--cream); font-weight: 700; text-underline-offset: 3px; }
 .contact-card dd a { text-decoration: none; } .contact-card dd a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+/* stránka Lístok – iba formulár */
+.ticket-only { background: var(--lime); min-height: calc(100vh - 72px); }
+.ticket-only .form-card { max-width: 640px; }
+.ticket-title { font-size: clamp(2.4rem, 6vw, 3.6rem); margin-bottom: 8px; }

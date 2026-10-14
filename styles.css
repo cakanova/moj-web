@@ -529,3 +529,9 @@ fieldset.field { border: 0; padding: 0; margin: 0 0 16px; }
   html { scroll-behavior: auto; }
   .btn { transition: none; }
 }
+
+/* TeX Gyre Adventor má iba rez Bold – nadpisy jemne zhrubneme obrysom */
+h1, h2, h3, .logo, .plans-list, .price strong {
+  -webkit-text-stroke: 0.022em currentColor;
+  paint-order: stroke fill;
+}

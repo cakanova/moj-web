@@ -860,3 +860,51 @@ h1, h2, h3, .logo, .plans-list, .price strong {
 .paths-punchline .accent-dark { display: inline; margin-top: 0; }
 .paths-punchline { max-width: 50ch; }
 .gallery-head-stack { display: block; } .gallery-head-stack .label { margin: 0 0 20px; }
+
+/* menu – desktop aj mobil */
+.nav-links { display: flex; align-items: center; gap: 28px; }
+.nav-toggle { display: none; }
+@media (max-width: 760px) {
+  .nav { gap: 10px; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: var(--cream);
+    border-bottom: 1px solid rgba(73, 12, 20, 0.12);
+    padding: 8px var(--gutter) 16px;
+    box-shadow: 0 12px 24px rgba(73, 12, 20, 0.08);
+  }
+  .nav .nav-links a:not(.btn) {
+    display: block;
+    padding: 14px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(73, 12, 20, 0.1);
+  }
+  .nav .nav-links a:last-child { border-bottom: 0; }
+  .site-header.menu-open .nav-links { display: flex; }
+  .nav-toggle {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    padding: 0 10px;
+    border: 2px solid var(--bordeaux);
+    border-radius: 12px;
+    background: transparent;
+    cursor: pointer;
+  }
+  .nav-toggle span { display: block; height: 2px; background: var(--bordeaux); border-radius: 2px; transition: transform 0.2s, opacity 0.2s; }
+  .site-header.menu-open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .site-header.menu-open .nav-toggle span:nth-child(2) { opacity: 0; }
+  .site-header.menu-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .logo img { height: 32px; }
+}

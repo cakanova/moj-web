@@ -9,7 +9,7 @@
   <link rel="preload" href="fonts/texgyreadventor-bold.otf" as="font" type="font/otf" crossorigin>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css?v=54">
+  <link rel="stylesheet" href="styles.css?v=55">
 </head>
 <body>
 
@@ -37,9 +37,14 @@
     <div class="wrap">
       <a href="./" class="logo" aria-label="unwaiting – domov"><img src="img/logo-unwaiting.svg" alt="unwaiting" width="918" height="230"></a>
       <nav class="nav" aria-label="Hlavná navigácia">
-        <a href="./#o-nas">Čo je unwaiting</a>
-        <a href="prihlaska.html">Prihláška</a>
+        <div class="nav-links" id="menu">
+          <a href="./#o-nas">Čo je unwaiting</a>
+          <a href="prihlaska.html">Prihláška</a>
+        </div>
         <a href="listok.html" class="btn btn-primary">Kúpiť lístok</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Otvoriť menu">
+          <span></span><span></span><span></span>
+        </button>
       </nav>
     </div>
   </header>
@@ -183,5 +188,19 @@
 
   <!-- Tally: automatická výška formulára -->
   <script async src="https://tally.so/widgets/embed.js" onload="Tally.loadEmbeds()"></script>
+  <script>
+    // mobilné menu
+    const toggle = document.querySelector('.nav-toggle');
+    const header = document.querySelector('.site-header');
+    toggle.addEventListener('click', () => {
+      const open = header.classList.toggle('menu-open');
+      toggle.setAttribute('aria-expanded', open);
+      toggle.setAttribute('aria-label', open ? 'Zavrieť menu' : 'Otvoriť menu');
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => {
+      header.classList.remove('menu-open');
+      toggle.setAttribute('aria-expanded', false);
+    }));
+  </script>
 </body>
 </html>

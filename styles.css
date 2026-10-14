@@ -764,3 +764,4 @@ h1, h2, h3, .logo, .plans-list, .price strong {
   paint-order: stroke fill;
 }
 .included-label { font-family: var(--font-body); font-weight: 700; font-size: 1.35rem; letter-spacing: 0; -webkit-text-stroke: 0; }
+.footer-legal { line-height: 1.8; }

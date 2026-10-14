@@ -670,3 +670,6 @@ h1, h2, h3, .logo, .plans-list, .price strong {
   paint-order: stroke fill;
 }
 .footer-slogan { font-size: 1.6rem; margin: 12px 0 0; }
+
+/* Tally formulár */
+.form-card iframe { display: block; width: 100%; min-height: 420px; border: 0; }

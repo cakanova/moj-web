@@ -9,7 +9,7 @@
   <link rel="preload" href="fonts/texgyreadventor-bold.otf" as="font" type="font/otf" crossorigin>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css?v=11">
+  <link rel="stylesheet" href="styles.css?v=12">
 </head>
 <body>
 
@@ -185,38 +185,10 @@
           <h3>Chcem lístok</h3>
           <p>Vyplň pár údajov a ozveme sa ti e-mailom.</p>
 
-          <!-- TODO: napojiť formulár na službu na zbieranie prihlášok (napr. Tally / Formspree) -->
-          <form id="ticket-form" novalidate>
-            <div class="field">
-              <label for="name">Meno a priezvisko</label>
-              <input type="text" id="name" name="meno" autocomplete="name" required>
-            </div>
-            <div class="field">
-              <label for="email">E-mail</label>
-              <input type="email" id="email" name="email" autocomplete="email" required>
-            </div>
-            <div class="field">
-              <label for="phone">Telefón</label>
-              <input type="tel" id="phone" name="telefon" autocomplete="tel" required>
-            </div>
-            <fieldset class="field">
-              <legend>Som</legend>
-              <div class="choice-row">
-                <label class="choice"><input type="radio" name="pohlavie" value="zena" required><span>Žena</span></label>
-                <label class="choice"><input type="radio" name="pohlavie" value="muz"><span>Muž</span></label>
-              </div>
-            </fieldset>
-            <label class="check">
-              <input type="checkbox" name="vek" required>
-              <span>Beriem na vedomie, že event je určený pre single ľudí vo veku 28 – 43 rokov.</span>
-            </label>
-            <label class="check">
-              <input type="checkbox" name="gdpr" required>
-              <span>Súhlasím so spracovaním osobných údajov za účelom rezervácie lístka. <a href="#">Viac info</a></span>
-            </label>
-            <button type="submit" class="btn btn-primary">Chcem lístok</button>
-            <p class="form-status" id="form-status" role="status" hidden></p>
-          </form>
+          <iframe
+            src="https://tally.so/embed/kdDqWR?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1"
+            loading="lazy" width="100%" height="560" frameborder="0" marginheight="0" marginwidth="0"
+            title="unwaiting – lístok"></iframe>
         </div>
       </div>
     </section>
@@ -338,19 +310,7 @@
     </div>
   </footer>
 
-  <script>
-    // Formulár zatiaľ nie je napojený – iba skontroluje údaje a zobrazí info.
-    const form = document.getElementById('ticket-form');
-    const status = document.getElementById('form-status');
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      if (!form.checkValidity()) {
-        status.textContent = 'Prosím, vyplň všetky údaje a potvrď súhlasy.';
-      } else {
-        status.textContent = 'Ďakujeme! Predaj lístkov spúšťame čoskoro – formulár zatiaľ nie je spustený.';
-      }
-      status.hidden = false;
-    });
-  </script>
+  <!-- Tally: automatická výška formulára -->
+  <script async src="https://tally.so/widgets/embed.js" onload="Tally.loadEmbeds()"></script>
 </body>
 </html>

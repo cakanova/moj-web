@@ -767,3 +767,4 @@ h1, h2, h3, .logo, .plans-list, .price strong {
 .footer-legal { line-height: 1.8; }
 .excuses .label { line-height: 1.9; }
 .excuses .struck { opacity: 1; }
+.excuses .struck { text-decoration-color: rgba(73, 12, 20, 0.75); }

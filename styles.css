@@ -754,3 +754,12 @@ h1, h2, h3, .logo, .plans-list, .price strong {
 .ticket-facts { margin-bottom: clamp(28px, 4vw, 44px); }
 .ticket-only .mini-steps.big { margin-top: 0; }
 .included-label { margin: 28px 0 4px; } .included-label + .included { margin-top: 0; }
+.included-label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  -webkit-text-stroke: 0.018em currentColor;
+  paint-order: stroke fill;
+}

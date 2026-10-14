@@ -781,3 +781,4 @@ h1, h2, h3, .logo, .plans-list, .price strong {
 .podium-photo { padding: 0; } .podium-photo .hero-img { aspect-ratio: 1 / 1; }
 @media (max-width: 900px) { .podium-photo { margin-left: 0; max-width: none; } }
 .podium-photo .hero-img { aspect-ratio: 4 / 5; object-position: center 30%; }
+.rules-art { width: min(260px, 70%); }

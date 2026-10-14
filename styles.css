@@ -717,3 +717,16 @@ h1, h2, h3, .logo, .plans-list, .price strong {
 .form-wide { max-width: 900px; margin: 0 auto; }
 @media (max-width: 900px) { .form-intro { grid-template-columns: 1fr; } }
 .emoji { -webkit-text-stroke: 0; font-weight: 400; }
+
+/* prihláška na pódium – 2 kroky */
+.two-steps {
+  margin-top: 16px;
+  background: var(--cream);
+  border: 2px solid var(--bordeaux);
+  border-radius: 16px;
+  padding: 18px 20px;
+}
+.two-steps .label { margin-bottom: 4px; }
+.two-steps .mini-steps { margin: 12px 0 10px; }
+.two-steps a, .note a { font-weight: 700; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.small { font-size: 0.92rem; margin: 0; }

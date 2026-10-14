@@ -802,3 +802,11 @@ h1, h2, h3, .logo, .plans-list, .price strong {
   .price { flex-wrap: wrap; }
   .price-art img { height: 80px; }
 }
+.plans-side { max-width: 460px; }
+.plans-media { width: min(420px, 100%); }
+.plans-media .plans-art { width: 150px; right: -40px; bottom: -44px; }
+@media (max-width: 760px) {
+  .plans-side { max-width: none; }
+  .plans-media { width: min(340px, 86%); }
+  .plans-media .plans-art { width: 110px; right: -24px; }
+}

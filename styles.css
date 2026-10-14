@@ -810,3 +810,10 @@ h1, h2, h3, .logo, .plans-list, .price strong {
   .plans-media { width: min(340px, 86%); }
   .plans-media .plans-art { width: 110px; right: -24px; }
 }
+.slogan-big {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  -webkit-text-stroke: 0.018em currentColor;
+  paint-order: stroke fill;
+}

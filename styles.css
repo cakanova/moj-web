@@ -864,7 +864,7 @@ h1, h2, h3, .logo, .plans-list, .price strong {
 /* menu – desktop aj mobil */
 .nav-links { display: flex; align-items: center; gap: 28px; }
 .nav-toggle { display: none; }
-@media (max-width: 760px) {
+@media (max-width: 1024px) {
   .nav { gap: 10px; }
   .nav-links {
     display: none;
@@ -964,3 +964,5 @@ h1, h2, h3, .logo, .plans-list, .price strong {
 .faq-list + .faq-group { margin-top: clamp(48px, 7vw, 72px); }
 .about-intro { padding-bottom: 0; }
 .faq-group-next { margin-top: clamp(48px, 7vw, 72px); }
+
+.nav a { white-space: nowrap; }

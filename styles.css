@@ -931,3 +931,4 @@ h1, h2, h3, .logo, .plans-list, .price strong {
   .hero .facts li:nth-child(n) { grid-column: span 1; }
   .hero .facts li:last-child { grid-column: span 2; }
 }
+.paths-punchline { text-align: left; margin-left: 0; margin-right: 0; }

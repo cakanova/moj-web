@@ -959,3 +959,4 @@ h1, h2, h3, .logo, .plans-list, .price strong {
 .faq-item[open] summary::after { content: "–"; }
 .faq-item p { margin: 0 0 20px; }
 .faq-item a { font-weight: 700; text-underline-offset: 3px; }
+.coming { min-height: 60vh; }

@@ -960,3 +960,5 @@ h1, h2, h3, .logo, .plans-list, .price strong {
 .faq-item p { margin: 0 0 20px; }
 .faq-item a { font-weight: 700; text-underline-offset: 3px; }
 .coming { min-height: 60vh; }
+.faq-group { font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0 0 18px; }
+.faq-list + .faq-group { margin-top: clamp(48px, 7vw, 72px); }

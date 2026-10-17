@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slovník bez filtra | unwaiting</title>
+  <meta name="description" content="Slovník bez filtra – čo znamená single, rande, ghosting a ďalšie pojmy zo sveta randenia. S humorom a bez filtra.">
+  <meta name="theme-color" content="#fff4ea">
+  <link rel="preload" href="fonts/texgyreadventor-bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css?v=67">
+</head>
+<body>
+
+  <!-- Opakované kresby -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="swoosh" viewBox="0 0 260 30">
+        <path d="M6 20 C 60 6, 140 4, 252 10" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+        <path d="M22 26 C 90 16, 160 15, 230 19" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="heart" viewBox="0 0 40 40">
+        <path d="M20 34 C 8 25, 3 18, 5 11 C 7 5, 15 4, 20 12 C 25 4, 33 5, 35 11 C 37 18, 32 25, 20 34 Z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="sparkle" viewBox="0 0 40 40">
+        <path d="M20 2 C 21 14, 26 19, 38 20 C 26 21, 21 26, 20 38 C 19 26, 14 21, 2 20 C 14 19, 19 14, 20 2 Z" fill="#d7dc38" stroke="#490c14" stroke-width="2.4" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="check" viewBox="0 0 24 24">
+        <rect x="2" y="2" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="2.2"/>
+        <path d="M7 12.5 L10.5 16 L17 8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="./" class="logo" aria-label="unwaiting – domov"><img src="img/logo-unwaiting.svg" alt="unwaiting" width="918" height="230"></a>
+      <nav class="nav" aria-label="Hlavná navigácia">
+        <div class="nav-links" id="menu">
+          <a href="o-nas.html">O nás</a>
+          <a href="chystame.html">Čo chystáme</a>
+          <a href="faq.html">FAQ</a>
+          <a href="prihlaska.html">Chcem sa prezentovať</a>
+        </div>
+        <a href="listok.html" class="btn btn-primary">Kúpiť lístok</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Otvoriť menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section coming">
+      <div class="wrap">
+        <p class="label">Slovník bez filtra</p>
+        <h1 class="h1-long">Slovník bez filtra</h1>
+        <p class="lead">Obsah pripravujeme.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-brand">
+        <span class="logo"><img src="img/logo-unwaiting-svetle.svg" alt="unwaiting" width="918" height="230"></span>
+        <p class="footer-tagline">Meet&nbsp;&nbsp; Connect&nbsp;&nbsp; Belong</p>
+      </div>
+      <p class="hand footer-slogan"><span class="nowrap">Menej scrollovania a swipovania</span> <span class="nowrap">= Viac skutočnej zábavy</span></p>
+      <small class="footer-legal">© 2026 unwaiting · <a href="#">Ochrana osobných údajov</a><br><a href="mailto:info@unwaiting.sk">info@unwaiting.sk</a></small>
+    </div>
+  </footer>
+  <script>
+    // mobilné menu
+    const toggle = document.querySelector('.nav-toggle');
+    const header = document.querySelector('.site-header');
+    toggle.addEventListener('click', () => {
+      const open = header.classList.toggle('menu-open');
+      toggle.setAttribute('aria-expanded', open);
+      toggle.setAttribute('aria-label', open ? 'Zavrieť menu' : 'Otvoriť menu');
+    });
+    document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => {
+      header.classList.remove('menu-open');
+      toggle.setAttribute('aria-expanded', false);
+    }));
+  </script>
+</body>
+</html>

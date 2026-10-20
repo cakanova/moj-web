@@ -1103,3 +1103,9 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .ticket-form-only .form-card.form-wide { max-width: 900px; }
 .podium-head { margin-bottom: 28px; }
 .note.note-stage { background: #eeebb4; color: var(--bordeaux); margin-top: 16px; } .note.note-stage strong { color: var(--bordeaux); }
+.podium-rules + #hviezda-vecera { padding-top: 0; }
+#hviezda-vecera .star-options { margin-top: 0; }
+#hviezda-vecera .star-options .after-form:not(.star-audience) { background: var(--lime); color: var(--bordeaux); }
+#hviezda-vecera .star-options .after-form:not(.star-audience) h3 { color: var(--bordeaux); }
+#hviezda-vecera .star-options .after-form:not(.star-audience) .btn { background: var(--bordeaux); border-color: var(--bordeaux); color: var(--cream); }
+.podium-rules + #hviezda-vecera, .podium-dark + .podium-rules { margin-top: -1px; }

@@ -1069,3 +1069,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .show-photo { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: center 35%; border-radius: 24px; margin: 0 0 18px; }
 .show-photo-tall { aspect-ratio: 4 / 5; object-position: center 20%; }
 .show-photo-tall { object-position: center 38%; }
+#ako-zazijes .ways-title { margin: 0 0 clamp(28px, 4vw, 44px); }

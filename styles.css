@@ -1058,3 +1058,5 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
   font-size: clamp(1.15rem, 2vw, 1.6rem); line-height: 1.08; letter-spacing: -0.02em;
   -webkit-text-stroke: 0.018em currentColor; paint-order: stroke fill;
 }
+.paths-punchline.punchline-hand { font-family: var(--font-hand); font-weight: 600; -webkit-text-stroke: 0; font-size: clamp(1.8rem, 3.4vw, 2.5rem); line-height: 1.15; transform: rotate(-1.5deg); }
+.ticket-new .ticket-rot { container-type: inline-size; } .ticket-new .ticket-text { font-size: 7.4cqw; top: 31%; }

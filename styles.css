@@ -1025,3 +1025,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .cal-soon { font-family: var(--font-hand); font-weight: 600; font-size: 1.8rem; opacity: 0.6; margin: auto 0 0 !important; }
 @media (max-width: 960px) { .calendar { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 600px) { .calendar { grid-template-columns: 1fr; } .cal-month { min-height: 0; } }
+.cal-btn { margin-top: 16px; align-self: flex-start; }

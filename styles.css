@@ -1044,3 +1044,6 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .hero .lead + .lead { margin-top: -14px; }
 .podium-note { font-size: clamp(1.6rem, 2.6vw, 2.1rem); transform: rotate(-2deg); margin: 0 0 28px; }
 .hero .facts.podium-facts { grid-template-columns: 1fr 1fr; } .hero .facts.podium-facts li { grid-column: auto; }
+.hero-photo.podium-photo { max-width: 460px; }
+.podium-photo .podium-note { font-size: clamp(1.5rem, 2.2vw, 1.9rem); margin: 28px 0 18px; }
+.podium-photo .facts { margin-bottom: 0; }

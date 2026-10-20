@@ -1109,3 +1109,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 #hviezda-vecera .star-options .after-form:not(.star-audience) h3 { color: var(--bordeaux); }
 #hviezda-vecera .star-options .after-form:not(.star-audience) .btn { background: var(--bordeaux); border-color: var(--bordeaux); color: var(--cream); }
 .podium-rules + #hviezda-vecera, .podium-dark + .podium-rules { margin-top: -1px; }
+.after-form-standalone { max-width: 900px; margin: 24px auto 0; }

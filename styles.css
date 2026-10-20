@@ -1078,11 +1078,10 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .podium-block { display: grid; grid-template-columns: 1.55fr 1fr; gap: clamp(32px, 5vw, 64px); align-items: start; }
 .podium-block-title { font-size: clamp(2rem, 4vw, 3.2rem); margin: 0; }
 .podium-block .lead { margin: 20px 0 0; }
-.podium-block .hand { color: var(--lavender); }
 .podium-block .actions { margin-top: 8px; }
-.podium-block .btn-primary { background: var(--lime); border-color: var(--lime); color: var(--bordeaux); }
-.podium-block .btn-outline { border-color: var(--cream); color: var(--cream); }
 .podium-block .hero-photo { margin-top: 0; justify-self: end; max-width: 460px; }
 .podium-block .facts { grid-template-columns: 1fr 1fr; margin: 24px 0 0; color: var(--bordeaux); }
 @media (max-width: 900px) { .podium-block { grid-template-columns: 1fr; } .podium-block .hero-photo { justify-self: start; } }
 .podium-block .podium-note { margin-top: 24px; }
+.podium-steps-head { margin-top: clamp(64px, 9vw, 112px); }
+.podium-cream .steps li { background: #fff; border: 1.5px solid rgba(73, 12, 20, 0.12); }

@@ -1084,4 +1084,10 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 @media (max-width: 900px) { .podium-block { grid-template-columns: 1fr; } .podium-block .hero-photo { justify-self: start; } }
 .podium-block .podium-note { margin-top: 24px; }
 .podium-steps-head { margin-top: clamp(64px, 9vw, 112px); }
-.podium-cream .steps li { background: #fff; border: 1.5px solid rgba(73, 12, 20, 0.12); }
+.podium-dark .podium-block .hand { color: var(--lavender); }
+.podium-dark .podium-block .btn-primary { background: var(--lime); border-color: var(--lime); color: var(--bordeaux); }
+.podium-dark .podium-block .btn-outline { border-color: var(--cream); color: var(--cream); }
+.podium-dark .steps li { color: var(--bordeaux); }
+.podium-dark + .podium-rules { padding-top: 0; }
+.podium-rules .included li { border-bottom-color: rgba(255, 244, 234, 0.25); }
+.podium-rules .hand-note { color: var(--lavender); }

@@ -1071,3 +1071,6 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .show-photo-tall { object-position: center 38%; }
 #ako-zazijes .ways-title { margin: 0 0 clamp(28px, 4vw, 44px); }
 #ako-zazijes .ways-title { margin: 0 0 clamp(28px, 4vw, 44px); }
+.show-facts-row { margin-top: clamp(28px, 4vw, 44px); align-items: stretch; }
+.show-facts-row .ticket-facts { margin: 0; }
+@media (max-width: 760px) { .show-facts-row { gap: 10px; } }

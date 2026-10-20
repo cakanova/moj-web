@@ -1036,3 +1036,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .included li svg { flex-shrink: 0; margin-top: 2px; }
 .program-list strong { font-weight: 700; } .program-list li { line-height: 1.5; }
 .faq-inline .faq-title { margin: 0 0 clamp(28px, 4vw, 44px); }
+.coming + .faq-inline { padding-top: 0; }

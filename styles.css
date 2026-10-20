@@ -1100,3 +1100,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 @media (max-width: 760px) { .star-options { grid-template-columns: 1fr; } }
 #hviezda-vecera + .faq-inline { padding-top: clamp(72px, 10vw, 128px); }
 .podium-block > div > .lead:first-child { margin-top: 0; }
+.ticket-form-only .form-card.form-wide { max-width: 900px; }

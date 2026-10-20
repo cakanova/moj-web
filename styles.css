@@ -1027,3 +1027,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 @media (max-width: 600px) { .calendar { grid-template-columns: 1fr; } .cal-month { min-height: 0; } }
 .cal-btn { margin-top: 16px; align-self: flex-start; }
 .cal-quote { font-size: clamp(1.8rem, 3.6vw, 2.6rem); text-align: center; max-width: 26ch; margin: clamp(48px, 7vw, 80px) auto 0; transform: rotate(-2deg); }
+.cal-quote { max-width: none; }

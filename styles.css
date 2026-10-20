@@ -1048,3 +1048,13 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .podium-photo .podium-note { font-size: clamp(1.5rem, 2.2vw, 1.9rem); margin: 28px 0 18px; }
 .podium-photo .facts { margin-bottom: 0; }
 .podium-photo .facts { margin-top: 24px; }
+/* nový lístok v hero */
+.ticket-new { width: min(380px, 92%); left: -48px; bottom: -24px; }
+.ticket-new .ticket-rot { position: relative; transform: rotate(-10deg); }
+.ticket-new .ticket-svg { display: block; width: 100%; height: auto; overflow: visible; }
+.ticket-new .ticket-text {
+  position: absolute; left: 17%; top: 33%; width: 50%; margin: 0;
+  font-family: var(--font-display); font-weight: 700; color: var(--bordeaux);
+  font-size: clamp(1.15rem, 2vw, 1.6rem); line-height: 1.08; letter-spacing: -0.02em;
+  -webkit-text-stroke: 0.018em currentColor; paint-order: stroke fill;
+}

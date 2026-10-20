@@ -1038,3 +1038,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .faq-inline .faq-title { margin: 0 0 clamp(28px, 4vw, 44px); }
 .coming + .faq-inline { padding-top: 0; }
 .manifesto .slogan-end { margin: 28px 0 0; }
+.manifesto .story { margin-top: 28px; max-width: 34em; } .manifesto .story p { margin: 0 0 16px; line-height: 1.6; }

@@ -1091,3 +1091,11 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .podium-dark + .podium-rules { padding-top: 0; }
 .podium-rules .included li { border-bottom-color: rgba(255, 244, 234, 0.25); }
 .podium-rules .hand-note { color: var(--lavender); }
+.star-options { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: clamp(28px, 4vw, 44px); }
+.star-options .after-form { margin: 0; display: flex; flex-direction: column; align-items: flex-start; }
+.star-options .after-form p { flex: 1; }
+.star-options .star-audience { background: var(--cream); color: var(--bordeaux); }
+.star-options .star-audience h3 { color: var(--bordeaux); }
+.star-options .star-audience .btn { background: var(--bordeaux); border-color: var(--bordeaux); color: var(--cream); }
+@media (max-width: 760px) { .star-options { grid-template-columns: 1fr; } }
+#hviezda-vecera + .faq-inline { padding-top: clamp(72px, 10vw, 128px); }

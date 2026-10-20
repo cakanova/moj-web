@@ -1102,3 +1102,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .podium-block > div > .lead:first-child { margin-top: 0; }
 .ticket-form-only .form-card.form-wide { max-width: 900px; }
 .podium-head { margin-bottom: 28px; }
+.note.note-stage { background: #eeebb4; color: var(--bordeaux); margin-top: 16px; } .note.note-stage strong { color: var(--bordeaux); }

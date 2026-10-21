@@ -1217,3 +1217,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .home-events h2, .home-blog h2 { margin-bottom: clamp(28px, 4vw, 44px); }
 .home-more { margin-top: clamp(28px, 4vw, 40px); }
 #o-nas .manifesto { align-items: start; }
+.ticket-new .ticket-text { left: 41.5%; top: 57%; width: 52%; transform: translate(-50%, -50%); text-align: center; }

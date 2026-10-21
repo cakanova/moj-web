@@ -1176,3 +1176,5 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .share-btn:hover { background: var(--bordeaux); color: var(--cream); }
 .share-btn svg { width: 20px; height: 20px; }
 .share-note { font-size: 0.9rem; opacity: 0.8; }
+.article-cta { margin-top: 24px; }
+.article-outro a.btn { font-weight: inherit; } .article-outro a.btn-primary { color: var(--cream); } .article-outro a.btn-outline { color: var(--bordeaux); }

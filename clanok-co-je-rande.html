@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Čo je rande? | Bez filtra | unwaiting</title>
+  <title>Jedno slovo, 100 očakávaní: Ako randenie vníma tvoje okolie | Bez filtra | unwaiting</title>
   <meta name="description" content="Bez filtra – čo znamená single a čo rande podľa mamy, kamošov, ex aj šéfa. S humorom a bez filtra.">
   <meta name="theme-color" content="#fff4ea">
   <link rel="preload" href="fonts/texgyreadventor-bold.otf" as="font" type="font/otf" crossorigin>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css?v=119">
+  <link rel="stylesheet" href="styles.css?v=121">
 </head>
 <body>
 
@@ -61,8 +61,12 @@
 
     <section class="section dict-group bg-dark" id="rande">
       <div class="wrap">
-        <h2 class="dict-term dict-term-lead accent-lime">Čo je rande?</h2>
-        <p class="lead dict-lead">Jedno slovo, veľa pohľadov. Takto vníma randenie tvoje okolie.</p>
+        <p class="label">Čo je rande?</p>
+        <h1 class="dict-term article-title">Jedno slovo, 100 očakávaní: Ako randenie vníma tvoje okolie</h1>
+        <div class="article-intro">
+          <p>Slovo „rande“ so sebou nesie celú paletu emócií, očakávaní a občas aj jemného stresu. Kým pre niekoho je to príležitosť urobiť si dokonalú fotku dvoch drinkov s dobrým svetlom, pre iného je to logistická operácia s vopred dohodnutým núdzovým telefonátom z kamošskej zálohy.</p>
+          <p>Rozobrali sme moderné randenie na drobné a pozreli sa naň očami rôznych skupín. Našiel/našla si sa v niektorej z týchto definícií?</p>
+        </div>
         <div class="term-grid">
           <article class="term-card">
             <span class="term-emoji" aria-hidden="true">🤳</span>
@@ -98,6 +102,30 @@
       </div>
     </section>
 
+    <section class="section article-end">
+      <div class="wrap">
+        <div class="article-outro">
+          <h2>A ako vyzerá rande bez filtrov a pretvárky?</h2>
+          <p>V unwaiting veríme, že randenie nemá byť stresujúci pohovor, PR kampaň pre Instagram ani dráma s poistnými telefonátmi. Má to byť obyčajný, príjemný večer s dobrým drinkom, kde sa bavíš bez toho, aby si musel/a hrať nejakú rolu.</p>
+          <p class="article-tip">💡 Nechce sa ti riešiť taktické manévre? Príď sa zabaviť do publika na <a href="single-show.html">SINGLE SHOW</a> alebo s nami vyraz na <a href="chystame.html">unwaiting TRIP</a> – u nás je to v prvom rade o pohode a reálnych ľuďoch.</p>
+          <div class="actions article-cta">
+            <a href="listok.html" class="btn btn-primary">Chcem lístok na SINGLE SHOW</a>
+            <a href="chystame.html" class="btn btn-outline">Pozrieť všetky eventy</a>
+          </div>
+          <div class="share">
+            <span class="share-label">Zdieľaj článok:</span>
+            <a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.unwaiting.sk%2Fclanok-co-je-rande.html" target="_blank" rel="noopener" aria-label="Zdieľať na Facebooku">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.3-.6.6-.6z" fill="currentColor"/></svg>
+            </a>
+            <button type="button" class="share-btn" data-share-ig aria-label="Zdieľať na Instagrame">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg>
+            </button>
+            <span class="share-note" hidden>Odkaz je skopírovaný – vlož ho do Instagram story alebo správy.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
@@ -122,6 +150,15 @@
     document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => {
       header.classList.remove('menu-open');
       toggle.setAttribute('aria-expanded', false);
+    }));
+  </script>
+  <script>
+    // zdieľanie na Instagram: na mobile systémové zdieľanie, inak kopírovanie odkazu
+    document.querySelectorAll('[data-share-ig]').forEach(b => b.addEventListener('click', async () => {
+      const url = location.href.split('?')[0].split('#')[0];
+      if (navigator.share) { try { await navigator.share({ title: document.title, url }); return; } catch (e) { return; } }
+      try { await navigator.clipboard.writeText(url); } catch (e) {}
+      const n = b.parentElement.querySelector('.share-note'); n.hidden = false; setTimeout(() => n.hidden = true, 4000);
     }));
   </script>
 </body>

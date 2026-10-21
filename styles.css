@@ -1126,3 +1126,10 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .about-story .story { max-width: 46em; }
 .about-story .story p { margin: 0 0 18px; line-height: 1.7; font-size: clamp(1.05rem, 1.6vw, 1.2rem); }
 #co-je-unwaiting .manifesto { align-items: start; }
+/* SINGLE SHOW – krémová časť Po známosti, bordové FAQ */
+.podium-cream .steps li { background: #fff; border: 1.5px solid rgba(73, 12, 20, 0.12); }
+.podium-cream + .podium-rules-light, .podium-rules-light + #hviezda-vecera { padding-top: 0; }
+#hviezda-vecera .star-options .star-audience { background: #fff; border: 1.5px solid rgba(73, 12, 20, 0.12); }
+.faq-dark { color: var(--cream); }
+.faq-dark .faq-item { color: var(--bordeaux); }
+#hviezda-vecera + .faq-dark { padding-top: clamp(72px, 10vw, 128px); }

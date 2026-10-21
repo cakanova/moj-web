@@ -1289,3 +1289,15 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .about-story .think { margin-left: auto; margin-right: 0; max-width: 520px; margin-top: 24px; }
 .about-story .think .who { text-align: right; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; font-size: .8rem; opacity: 1; }
 .scene-photo { height: auto !important; aspect-ratio: auto; }
+/* O nás – Laura a Lucia vedľa seba, záver citát + fotka */
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+.speech { position: relative; background: var(--lavender); color: var(--bordeaux); border-radius: 28px; border-bottom-left-radius: 8px; padding: 22px 26px; }
+.speech p { margin: 0 0 12px; line-height: 1.55; }
+.speech p:last-child { margin-bottom: 0; }
+.speech .who, .about-story .think .who { display: block; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; font-size: .8rem; opacity: 1; margin-bottom: 10px; }
+.speech-time { font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; opacity: .65; text-align: center; }
+.about-story .duo .think { margin: 0; max-width: none; }
+.about-story .think .who { text-align: left; }
+.story-final { flex-direction: row; justify-content: space-between; align-items: center; gap: clamp(24px, 5vw, 64px); }
+.story-final .chat-end { text-align: left; font-size: clamp(1.8rem, 3.2vw, 2.5rem); }
+@media (max-width: 760px) { .duo { grid-template-columns: 1fr; } .story-final { flex-direction: column; align-items: flex-start; } }

@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kto/čo je single? | Bez filtra | unwaiting</title>
+  <title>Slovník single života: Čo si o tebe myslia ostatní vs. aká je realita | Bez filtra | unwaiting</title>
   <meta name="description" content="Bez filtra – čo znamená single a čo rande podľa mamy, kamošov, ex aj šéfa. S humorom a bez filtra.">
   <meta name="theme-color" content="#fff4ea">
   <link rel="preload" href="fonts/texgyreadventor-bold.otf" as="font" type="font/otf" crossorigin>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css?v=118">
+  <link rel="stylesheet" href="styles.css?v=119">
 </head>
 <body>
 
@@ -61,9 +61,12 @@
 
     <section class="section dict-group bg-lav" id="single">
       <div class="wrap">
-        <p class="label">Bez filtra</p>
-        <h1 class="dict-term">Kto/čo je single?</h1>
-        <p class="lead dict-lead">Jedno slovo, veľa pohľadov. Takto vidí single život tvoje okolie.</p>
+        <p class="label">Kto je single?</p>
+        <h1 class="dict-term article-title">Slovník single života: Čo si o tebe myslia ostatní vs. aká je realita</h1>
+        <div class="article-intro">
+          <p>Povedať niekomu „som single“ vyvolá v každej hlave úplne iný film. Zatiaľ čo tvoja mama vidí rodinnú tragédiu a šéf ideálneho kandidáta na víkendovú pohotovosť, tvoj pes oslavuje, že má celú pohovku len pre seba.</p>
+          <p>Zozbierali sme 9 najčastejších pohľadov na to, čo to vlastne znamená žiť bez partnera. Našiel/našla si sa v tom ty (alebo tvoja mama)?</p>
+        </div>
         <div class="term-grid">
           <article class="term-card">
             <span class="term-emoji" aria-hidden="true">👨‍👩‍👧</span>
@@ -115,6 +118,26 @@
       </div>
     </section>
 
+    <section class="section article-end">
+      <div class="wrap">
+        <div class="article-outro">
+          <h2>A ako vidíme single život my v unwaiting?</h2>
+          <p>Bez drámy, bez prehnaných očakávaní a bez čakania na „vhodnejšiu chvíľu“. Žiadna dlhodobá nálepka, len obdobie, kedy sa môžeš baviť, spoznávať nových ľudí a chodiť na akcie, kde nemusíš predstierať, že si niekto iný.</p>
+          <p class="article-tip">💡 Akej definícii sa najviac smeješ ty? <a href="mailto:info@unwaiting.sk">Napíš nám</a> alebo sa zastav na najbližšej <a href="single-show.html">SINGLE SHOW</a> a povieš nám to osobne pri bare.</p>
+          <div class="share">
+            <span class="share-label">Zdieľaj článok:</span>
+            <a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.unwaiting.sk%2Fclanok-kto-co-je-single.html" target="_blank" rel="noopener" aria-label="Zdieľať na Facebooku">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.3-.6.6-.6z" fill="currentColor"/></svg>
+            </a>
+            <button type="button" class="share-btn" data-share-ig aria-label="Zdieľať na Instagrame">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></svg>
+            </button>
+            <span class="share-note" hidden>Odkaz je skopírovaný – vlož ho do Instagram story alebo správy.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
@@ -139,6 +162,15 @@
     document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => {
       header.classList.remove('menu-open');
       toggle.setAttribute('aria-expanded', false);
+    }));
+  </script>
+  <script>
+    // zdieľanie na Instagram: na mobile systémové zdieľanie, inak kopírovanie odkazu
+    document.querySelectorAll('[data-share-ig]').forEach(b => b.addEventListener('click', async () => {
+      const url = location.href.split('?')[0].split('#')[0];
+      if (navigator.share) { try { await navigator.share({ title: document.title, url }); return; } catch (e) { return; } }
+      try { await navigator.clipboard.writeText(url); } catch (e) {}
+      const n = b.parentElement.querySelector('.share-note'); n.hidden = false; setTimeout(() => n.hidden = true, 4000);
     }));
   </script>
 </body>

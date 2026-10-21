@@ -1162,3 +1162,17 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .back-link { font-weight: 700; color: var(--bordeaux); text-decoration: none; }
 .back-link:hover { text-decoration: underline; }
 .article-meta { display: flex; align-items: center; gap: 12px; margin: 18px 0 clamp(20px, 3vw, 32px); font-size: 0.9rem; }
+/* článok – úvod, záver, zdieľanie */
+.article-title { font-size: clamp(2.2rem, 5vw, 4rem); max-width: 20ch; }
+.article-intro { margin: 20px 0 clamp(28px, 4vw, 44px); max-width: 44em; }
+.article-intro p { margin: 0 0 14px; font-size: clamp(1.1rem, 1.8vw, 1.3rem); line-height: 1.55; }
+.article-outro { max-width: 46em; }
+.article-outro h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 18px; }
+.article-outro p { font-size: clamp(1.05rem, 1.6vw, 1.2rem); line-height: 1.65; margin: 0 0 16px; }
+.article-outro a { color: var(--bordeaux); font-weight: 700; text-underline-offset: 3px; }
+.share { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+.share-label { font-weight: 700; margin-right: 4px; }
+.share-btn { width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid var(--bordeaux); background: transparent; color: var(--bordeaux); display: inline-flex; align-items: center; justify-content: center; cursor: pointer; padding: 0; }
+.share-btn:hover { background: var(--bordeaux); color: var(--cream); }
+.share-btn svg { width: 20px; height: 20px; }
+.share-note { font-size: 0.9rem; opacity: 0.8; }

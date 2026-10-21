@@ -1243,3 +1243,12 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .form-card p.card-hand { margin-bottom: 12px; } .card-list { margin: 0 0 24px; }
 #hviezda-vecera .star-options { grid-template-columns: 1fr; max-width: 820px; margin-left: auto; margin-right: auto; } #hviezda-vecera .after-form { align-items: center; text-align: center; } #hviezda-vecera .after-form p { max-width: 36em; }
 #na-podium { scroll-margin-top: 80px; }
+/* prehodené farby kariet: publikum bordové, pódium svetlé */
+.path.path-stage.path-light { background: var(--cream); color: var(--bordeaux); }
+.path.path-stage.path-light h3 { color: var(--bordeaux); }
+.path.path-stage.path-light .included li { border-bottom-color: rgba(73, 12, 20, 0.2); }
+.path.path-stage.path-light .btn { background: var(--bordeaux); border-color: var(--bordeaux); color: var(--cream); }
+.path.path-dark { background: var(--bordeaux); color: var(--cream); }
+.path.path-dark h3 { color: var(--lime); }
+.path.path-dark .included li { border-bottom-color: rgba(255, 244, 234, 0.25); }
+.path.path-dark .btn { background: var(--lime); border-color: var(--lime); color: var(--bordeaux); }

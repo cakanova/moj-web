@@ -1133,3 +1133,32 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .faq-dark { color: var(--cream); }
 .faq-dark .faq-item { color: var(--bordeaux); }
 #hviezda-vecera + .faq-dark { padding-top: clamp(72px, 10vw, 128px); }
+/* Bez filtra – blog */
+.blog-head { padding-bottom: clamp(28px, 4vw, 40px); }
+.chip-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
+.chip {
+  display: inline-block; font-family: var(--font-body); font-size: 0.8rem; font-weight: 600;
+  padding: 6px 12px; border-radius: 999px; border: 1.5px solid currentColor; background: transparent;
+  color: var(--bordeaux); line-height: 1.2; white-space: nowrap;
+}
+.chip-filter { cursor: pointer; }
+.chip-filter:hover { background: rgba(73, 12, 20, 0.06); }
+.chip-filter.is-active { background: var(--bordeaux); border-color: var(--bordeaux); color: var(--cream); }
+.blog-list { padding-top: 0; }
+.post-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.post-card { display: flex; flex-direction: column; background: #fff; border: 1.5px solid rgba(73, 12, 20, 0.12); border-radius: 22px; overflow: hidden; color: var(--bordeaux); text-decoration: none; transition: transform .15s ease, box-shadow .15s ease; }
+.post-card:hover { transform: translateY(-3px); box-shadow: 6px 6px 0 var(--bordeaux); }
+.post-card[hidden] { display: none; }
+.post-thumb { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; }
+.post-body { padding: 20px 22px 22px; display: flex; flex-direction: column; gap: 10px; flex: 1; align-items: flex-start; }
+.post-body h3 { font-size: clamp(1.4rem, 2vw, 1.7rem); margin: 0; }
+.post-body p { margin: 0; line-height: 1.55; flex: 1; }
+.post-time { font-size: 0.85rem; opacity: 0.7; }
+.post-empty { margin-top: 20px; }
+@media (max-width: 960px) { .post-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .post-grid { grid-template-columns: 1fr; } }
+/* článok */
+.article-top { padding: clamp(28px, 4vw, 40px) 0 0; }
+.back-link { font-weight: 700; color: var(--bordeaux); text-decoration: none; }
+.back-link:hover { text-decoration: underline; }
+.article-meta { display: flex; align-items: center; gap: 12px; margin: 18px 0 clamp(20px, 3vw, 32px); font-size: 0.9rem; }

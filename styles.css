@@ -1110,3 +1110,9 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 #hviezda-vecera .star-options .after-form:not(.star-audience) .btn { background: var(--bordeaux); border-color: var(--bordeaux); color: var(--cream); }
 .podium-rules + #hviezda-vecera, .podium-dark + .podium-rules { margin-top: -1px; }
 .after-form-standalone { max-width: 900px; margin: 24px auto 0; }
+/* SINGLE SHOW – prvá sekcia na bordovom */
+.ticket-only.show-hero { background: var(--bordeaux); color: var(--cream); }
+.show-hero .show-title { color: var(--cream); }
+.show-hero .included li { border-bottom-color: rgba(255, 244, 234, 0.25); }
+.show-hero .included li a { color: var(--lime); }
+.show-hero .facts li { color: var(--bordeaux); }

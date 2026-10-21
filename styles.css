@@ -1304,3 +1304,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .phone-head .av-photo { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; display: block; border: 2px solid var(--lime); }
 .story-final { justify-content: center; gap: clamp(24px, 4vw, 48px); }
 .form-page-head { max-width: 900px; margin: 0 auto clamp(28px, 4vw, 44px); } .form-page-head .lead { margin: 14px 0 0; max-width: none; } .form-page-head h1 { margin-bottom: 8px; }
+.form-page-head-narrow { max-width: 640px; }

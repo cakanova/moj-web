@@ -1193,3 +1193,14 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .reality-side .tip-label { margin-top: 18px; }
 .quote-line { margin: 0 0 14px; line-height: 1.6; } .quote-line:last-child { margin-bottom: 0; }
 .chip-count { opacity: 0.7; font-weight: 500; }
+/* článok – príbeh */
+.story-body { max-width: 44em; }
+.story-body p { font-size: clamp(1.05rem, 1.6vw, 1.2rem); line-height: 1.7; margin: 0 0 18px; }
+.story-body .label { margin-bottom: 18px; }
+.story-body .story-punch { font-size: clamp(1.9rem, 3.6vw, 2.6rem); line-height: 1.1; transform: rotate(-2deg); margin: 28px 0 0; }
+.article-gains h2 { margin-bottom: clamp(28px, 4vw, 44px); font-size: clamp(2rem, 4vw, 3rem); }
+.gain-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.gain-card { background: var(--cream); color: var(--bordeaux); border-radius: 22px; padding: clamp(22px, 3vw, 30px); }
+.gain-card h3 { font-size: clamp(1.3rem, 2vw, 1.6rem); margin: 0 0 12px; }
+.gain-card p { margin: 0; line-height: 1.6; }
+@media (max-width: 900px) { .gain-grid { grid-template-columns: 1fr; } }

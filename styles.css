@@ -1116,3 +1116,13 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .show-hero .included li { border-bottom-color: rgba(255, 244, 234, 0.25); }
 .show-hero .included li a { color: var(--lime); }
 .show-hero .facts li { color: var(--bordeaux); }
+/* O nás – text vľavo, fotka vpravo, príbeh pod kartami */
+.about-text { margin-top: 28px; max-width: 34em; }
+.about-text p { margin: 0 0 16px; line-height: 1.6; }
+.about-photo img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 28px; }
+.about-photo { max-width: 460px; justify-self: end; width: 100%; }
+@media (max-width: 900px) { .about-photo { justify-self: start; } }
+.about-story { padding-top: 0; }
+.about-story .story { max-width: 46em; }
+.about-story .story p { margin: 0 0 18px; line-height: 1.7; font-size: clamp(1.05rem, 1.6vw, 1.2rem); }
+#co-je-unwaiting .manifesto { align-items: start; }

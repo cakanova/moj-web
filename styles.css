@@ -1252,3 +1252,32 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .path.path-dark h3 { color: var(--lime); }
 .path.path-dark .included li { border-bottom-color: rgba(255, 244, 234, 0.25); }
 .path.path-dark .btn { background: var(--lime); border-color: var(--lime); color: var(--bordeaux); }
+
+/* O nás – príbeh ako rozhovor */
+.st-head{max-width:720px}
+.scene{display:grid;grid-template-columns:120px 1fr;gap:28px;margin-top:clamp(40px,6vw,64px);align-items:start}
+.scene-num{font:700 1rem var(--font-body);letter-spacing:.14em;text-transform:uppercase}
+.scene-num b{display:block;font:700 3.2rem/1 var(--font-display);color:var(--lavender);letter-spacing:0;margin-bottom:6px}
+.scene h3{font-size:clamp(1.5rem,2.6vw,2rem);margin:0 0 12px}
+.scene p.txt{margin:0 0 18px;line-height:1.65;max-width:40em}
+.photo-ph{width:100%;max-width:520px;aspect-ratio:4/3;border-radius:24px;border:2px dashed rgba(73,12,20,.25);display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;opacity:.7}
+.talk{display:flex;flex-direction:column;gap:10px;max-width:560px}
+.bubble{max-width:82%;padding:10px 14px;border-radius:18px;line-height:1.45;font-size:.97rem}
+.bubble p{margin:0} .who{display:block;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.7;margin-bottom:2px}
+.bubble.her{align-self:flex-start;background:var(--lavender);color:var(--bordeaux);border-bottom-left-radius:6px}
+.bubble.me{align-self:flex-end;background:var(--bordeaux);color:var(--cream);border-bottom-right-radius:6px}
+.think{position:relative;max-width:560px;margin-top:28px;background:#fff;border:2px solid var(--bordeaux);border-radius:40px;padding:22px 26px}
+.think p{margin:0;font-family:var(--font-hand);font-weight:600;font-size:1.55rem;line-height:1.2}
+.think:after,.think:before{content:"";position:absolute;border:2px solid var(--bordeaux);background:#fff;border-radius:50%}
+.think:before{width:22px;height:22px;right:60px;bottom:-30px} .think:after{width:12px;height:12px;right:44px;bottom:-48px}
+.think .who{margin-bottom:6px}
+.phone{background:#fff;border:1.5px solid rgba(73,12,20,.12);border-radius:32px;padding:0 0 22px;max-width:440px;overflow:hidden}
+.phone-head{display:flex;align-items:center;gap:12px;padding:16px 20px;background:var(--bordeaux);color:var(--cream)}
+.phone-head .av{width:38px;height:38px;border-radius:50%;background:var(--lime);color:var(--bordeaux);display:flex;align-items:center;justify-content:center;font-weight:700}
+.phone-head strong{display:block} .phone-head span{font-size:.8rem;opacity:.8}
+.chat{padding:18px 18px 0;display:flex;flex-direction:column;gap:8px}
+.chat-day{align-self:center;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;opacity:.6;margin:4px 0}
+.chat-end{font-size:1.9rem;line-height:1.15;margin:clamp(40px,6vw,64px) 0 0;transform:rotate(-2deg);text-align:center}
+@media (max-width:700px){.scene{grid-template-columns:1fr;gap:12px}
+.scene-photo{width:100%;max-width:420px;border-radius:24px;display:block}
+.about-story .chat-end{max-width:none}

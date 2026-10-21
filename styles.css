@@ -1235,3 +1235,5 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 #o-nas .manifesto { align-items: end; }
 .contact-strip { padding-top: 0; } .contact-strip h2 { margin-bottom: 24px; }
 .contact-strip + .faq-inline { padding-top: 0; }
+.card-hand { font-size: clamp(1.6rem, 2.4vw, 2rem); line-height: 1.2; transform: rotate(-2deg); margin: 14px 0 28px; }
+.form-card p.card-hand { font-family: var(--font-hand); font-weight: 600; font-size: clamp(1.7rem, 2.6vw, 2.1rem); line-height: 1.2; margin: 14px 0 28px; }

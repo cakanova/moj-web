@@ -1074,7 +1074,7 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .show-facts-row { margin-top: clamp(28px, 4vw, 44px); align-items: stretch; }
 .show-facts-row .ticket-facts { margin: 0; }
 @media (max-width: 760px) { .show-facts-row { gap: 10px; } }
-/* SINGLE SHOW – blok Po známosti v bordovej sekcii */
+/* SINGLES SHOW – blok Po známosti v bordovej sekcii */
 .podium-block { display: grid; grid-template-columns: 1.55fr 1fr; gap: clamp(32px, 5vw, 64px); align-items: start; }
 .podium-block-title { font-size: clamp(2rem, 4vw, 3.2rem); margin: 0; }
 .podium-block .lead { margin: 20px 0 0; }
@@ -1110,7 +1110,7 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 #hviezda-vecera .star-options .after-form:not(.star-audience) .btn { background: var(--bordeaux); border-color: var(--bordeaux); color: var(--cream); }
 .podium-rules + #hviezda-vecera, .podium-dark + .podium-rules { margin-top: -1px; }
 .after-form-standalone { max-width: 900px; margin: 24px auto 0; }
-/* SINGLE SHOW – prvá sekcia na bordovom */
+/* SINGLES SHOW – prvá sekcia na bordovom */
 .ticket-only.show-hero { background: var(--bordeaux); color: var(--cream); }
 .show-hero .show-title { color: var(--cream); }
 .show-hero .included li { border-bottom-color: rgba(255, 244, 234, 0.25); }
@@ -1126,7 +1126,7 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .about-story .story { max-width: 46em; }
 .about-story .story p { margin: 0 0 18px; line-height: 1.7; font-size: clamp(1.05rem, 1.6vw, 1.2rem); }
 #co-je-unwaiting .manifesto { align-items: start; }
-/* SINGLE SHOW – krémová časť Po známosti, bordové FAQ */
+/* SINGLES SHOW – krémová časť Po známosti, bordové FAQ */
 .podium-cream .steps li { background: #fff; border: 1.5px solid rgba(73, 12, 20, 0.12); }
 .podium-cream + .podium-rules-light, .podium-rules-light + #hviezda-vecera { padding-top: 0; }
 #hviezda-vecera .star-options .star-audience { background: #fff; border: 1.5px solid rgba(73, 12, 20, 0.12); }

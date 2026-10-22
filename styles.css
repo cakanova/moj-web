@@ -1458,3 +1458,21 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .pillar-card h3 span { color: var(--bordeaux); }
 .pillar-card p { line-height: 1.6; }
 @media (max-width: 700px) { .pillar-top { height: 170px; } .pillar-card .pillar-art { height: 125px; } }
+/* Role: biele karty s farebnou hlavičkou a cenou */
+.path.role-card { background: #fff; color: var(--bordeaux); padding: 0; border-radius: 28px; overflow: hidden; box-shadow: 0 18px 50px rgba(73, 12, 20, 0.12); display: flex; flex-direction: column; gap: 0; }
+.role-head { position: relative; padding: 28px 32px 24px; }
+.role-aud .role-head { background: var(--bordeaux); color: var(--cream); }
+.role-stage .role-head { background: var(--lime); color: var(--bordeaux); }
+.role-head .label { margin: 0 0 10px; }
+.role-aud .role-head .label { color: var(--cream); }
+.role-head h3 { margin: 0; padding-right: 110px; }
+.role-aud .role-head h3 { color: var(--lavender); }
+.role-stage .role-head h3 { color: var(--bordeaux); }
+.role-price { position: absolute; right: 24px; top: 24px; background: #fff; color: var(--bordeaux); border-radius: 999px; padding: 8px 16px; font-family: var(--font-display); font-weight: 700; -webkit-text-stroke: .015em currentColor; transform: rotate(4deg); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12); }
+.role-body { padding: 18px 32px 32px; display: flex; flex-direction: column; align-items: flex-start; flex: 1; }
+.role-body .included { width: 100%; margin-bottom: 26px; }
+.role-body .included li { border-bottom-color: rgba(73, 12, 20, 0.14); color: var(--bordeaux); }
+.role-body .btn { margin-top: auto; }
+.role-aud .role-body .btn { background: var(--lavender); border-color: var(--lavender); color: var(--bordeaux); }
+.role-stage .role-body .btn { background: var(--bordeaux); border-color: var(--bordeaux); color: var(--cream); }
+@media (max-width: 520px) { .role-head, .role-body { padding-left: 22px; padding-right: 22px; } .role-price { right: 16px; top: 16px; } .role-head h3 { padding-right: 90px; } }

@@ -1321,3 +1321,10 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .excuse-phone .struck-msg p { text-decoration-thickness: 1.5px; text-decoration-color: rgba(215, 220, 56, 0.55); }
 .excuse-phone .go-msg { background: #d7dc38; }
 .excuse-phone { margin-bottom: 0; }
+/* SINGLES SHOW: chat s kamoškou */
+.friend-chat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
+.friend-chat-note { font-size: clamp(1.8rem, 3vw, 2.4rem); line-height: 1.15; transform: rotate(-2deg); margin: 24px 0 0; }
+.friend-phone { max-width: 420px; width: 100%; justify-self: center; border: 2px solid var(--bordeaux); box-shadow: 8px 8px 0 var(--bordeaux); }
+.friend-phone .bubble { font-size: 1.02rem; }
+.phone-head .av-letter { width: 42px; height: 42px; border-radius: 50%; background: var(--lime); color: var(--bordeaux); display: flex; align-items: center; justify-content: center; font-weight: 700; flex: none; }
+@media (max-width: 800px) { .friend-chat-grid { grid-template-columns: 1fr; } }

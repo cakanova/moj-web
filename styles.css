@@ -1480,3 +1480,6 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 @media (max-width: 1000px) { .show-side-note { margin-bottom: 0; } .ifacts.show-facts-row { margin-top: 44px; } }
 #o-nas + .home-blog { padding-top: 0; }
 #uvod .hero-photo { margin-top: 0; }
+/* Domov: dlhší nadpis v hero */
+.hero h1.hero-title.hero-title-long { font-size: clamp(2rem, 3.4vw, 3.2rem); line-height: 1.08; }
+.hero-title-end { display: block; margin-top: .25em; }

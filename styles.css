@@ -1440,3 +1440,7 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .tk-link:hover { transform: translateY(-3px); box-shadow: 0 20px 48px rgba(73, 12, 20, 0.18); }
 .tk-cover { position: absolute; inset: 0; z-index: 1; border-radius: inherit; }
 .tk-link .btn, .tk-link .cal-link { position: relative; z-index: 2; }
+/* Kroky na pódium: biele karty s veľkým zeleným číslom */
+.podium-steps-section .steps { gap: 22px; }
+.podium-steps-section .steps li { background: #fff; border: 0; border-radius: 24px; padding: 26px 24px 28px; box-shadow: 0 14px 40px rgba(73, 12, 20, 0.08); }
+.podium-steps-section .steps li::before { content: counter(step, decimal-leading-zero); display: block; width: auto; height: auto; border-radius: 0; background: none; color: var(--lime); font-family: var(--font-display); font-weight: 700; -webkit-text-stroke: .02em currentColor; font-size: clamp(4.5rem, 7vw, 6rem); line-height: .8; margin-bottom: 18px; }

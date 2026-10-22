@@ -1114,7 +1114,7 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .ticket-only.show-hero { background: var(--bordeaux); color: var(--cream); }
 .show-hero .show-title { color: var(--cream); }
 .show-hero .included li { border-bottom-color: rgba(255, 244, 234, 0.25); }
-.show-hero .included li a { color: var(--lime); }
+.show-hero .included li a { color: var(--cream); text-decoration-color: rgba(255, 244, 234, 0.6); }
 .show-hero .facts li { color: var(--bordeaux); }
 /* O nás – text vľavo, fotka vpravo, príbeh pod kartami */
 .about-text { margin-top: 28px; max-width: 34em; }
@@ -1430,3 +1430,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .ifacts-2x2 li:nth-child(n+3) { border-top: 2px dashed rgba(73, 12, 20, 0.3); }
 @media (max-width: 520px) { .ifacts.ifacts-ticket.ifacts-2x2 { grid-template-columns: 1fr 1fr; } .ifacts-2x2 li + li { border-top: 0; } .ifacts-2x2 li:nth-child(even) { border-left: 2px dashed rgba(73, 12, 20, 0.3); } .ifacts-2x2 li:nth-child(n+3) { border-top: 2px dashed rgba(73, 12, 20, 0.3); } .ifacts-2x2 li { padding: 16px 16px; } }
 @media (min-width: 1001px) { .ifacts.ifacts-ticket.show-facts-row { grid-template-columns: 1fr 1fr 0.8fr 1.35fr; } }
+.show-hero .program-list a { color: var(--cream); text-decoration: underline; text-decoration-color: rgba(255, 244, 234, 0.6); text-underline-offset: 3px; } .show-hero .program-list a:hover { text-decoration-color: var(--cream); }

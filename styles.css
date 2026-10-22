@@ -1348,3 +1348,5 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .friend-phone .bubble.me, .excuse-phone .bubble.me:not(.go-msg) { background: linear-gradient(135deg, #7a2433, var(--bordeaux)); }
 .friend-phone .chat-day, .excuse-phone .chat-day { color: #8e8e8e; opacity: 1; text-transform: none; letter-spacing: 0; }
 .excuse-phone .struck-msg p { text-decoration-color: rgba(255, 244, 234, 0.6); }
+.excuse-phone .bubble.me.struck-msg { background: #efefef; color: #262626; }
+.excuse-phone .struck-msg p { text-decoration-thickness: 1px; text-decoration-color: rgba(38, 38, 38, 0.4); }

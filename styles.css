@@ -1496,3 +1496,11 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .hero-center .actions { justify-content: center; }
 @media (max-width: 700px) { .hero-center .hero-photo.hero-photo-wide { margin-left: 0; } .hero-center .ticket-new { left: -10px; width: min(240px, 70%); } .hero-center .hero-photo-wide .hero-img { aspect-ratio: 4 / 3; } }
 .hero-title-end { font-size: .62em; margin-top: .45em; }
+/* Domov: hero text vľavo, fotka vpravo, citát pod fotkou */
+.hero.hero-split .wrap { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(32px, 5vw, 64px); text-align: left; }
+.hero-split .hero-title.hero-title-long { font-size: clamp(2rem, 3.4vw, 3.2rem); }
+.hero-split .actions { margin-top: 28px; }
+.hero-split .hero-photo { padding: 0; margin: 0; max-width: none; justify-self: stretch; }
+.hero-split .hero-img { aspect-ratio: 3 / 2; object-position: center; }
+.hero-split .hand-note.hero-note { display: block; text-align: center; margin: 22px 0 0; transform: rotate(-3deg); }
+@media (max-width: 900px) { .hero.hero-split .wrap { grid-template-columns: 1fr; } }

@@ -1337,4 +1337,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .path.path-dark h3 { color: var(--lavender); }
 .path.path-dark .btn { background: var(--lavender); border-color: var(--lavender); color: var(--bordeaux); }
 .ticket-form-only.ticket-form-lav { background: var(--lavender); }
-#hviezda-vecera .btn { background: var(--cream); border: 2px solid var(--bordeaux); color: var(--bordeaux); }
+#hviezda-vecera .star-options .after-form:not(.star-audience) .btn { background: var(--cream); border: 2px solid var(--bordeaux); color: var(--bordeaux); }

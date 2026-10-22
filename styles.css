@@ -1435,3 +1435,8 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 /* Lístok s údajmi: rovnaké odsadenie všetkých polí */
 .ifacts.ifacts-ticket li, .ifacts.ifacts-ticket li:nth-child(odd), .ifacts.ifacts-ticket li:first-child { display: block; padding: 20px 26px; }
 @media (max-width: 520px) { .ifacts.ifacts-ticket li, .ifacts.ifacts-ticket li:nth-child(odd), .ifacts.ifacts-ticket li:first-child { padding: 16px 18px; } }
+/* Celý lístok SINGLES SHOW klikateľný */
+.tk-link { cursor: pointer; transition: transform .2s ease, box-shadow .2s ease; }
+.tk-link:hover { transform: translateY(-3px); box-shadow: 0 20px 48px rgba(73, 12, 20, 0.18); }
+.tk-cover { position: absolute; inset: 0; z-index: 1; border-radius: inherit; }
+.tk-link .btn, .tk-link .cal-link { position: relative; z-index: 2; }

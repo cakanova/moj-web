@@ -1477,3 +1477,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .role-stage .role-body .btn { background: var(--bordeaux); border-color: var(--bordeaux); color: var(--cream); }
 @media (max-width: 520px) { .role-head, .role-body { padding-left: 22px; padding-right: 22px; } .role-price { right: 16px; top: 16px; } .role-head h3 { padding-right: 90px; } }
 @media (min-width: 1001px) { .ifacts.ifacts-ticket.show-facts-row { grid-template-columns: repeat(3, 1fr); } } .show-facts-row.ifacts { --n: 3; } @media (max-width: 1000px) { .show-facts-row.ifacts-ticket li:last-child { grid-column: span 2; } } @media (max-width: 520px) { .show-facts-row.ifacts-ticket li:last-child { grid-column: auto; } }
+@media (max-width: 1000px) { .show-side-note { margin-bottom: 0; } .ifacts.show-facts-row { margin-top: 44px; } }

@@ -1421,3 +1421,12 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .ifacts-ticket strong { white-space: normal; }
 @media (max-width: 1000px) { .ifacts.ifacts-ticket { grid-template-columns: 1fr 1fr; gap: 0; } .ifacts-ticket li:nth-child(odd) { border-left: 0; } .ifacts-ticket li:nth-child(n+3) { border-top: 2px dashed rgba(73, 12, 20, 0.3); } .next-event-facts.ifacts-ticket li:last-child { grid-column: span 2; } }
 @media (max-width: 520px) { .ifacts.ifacts-ticket, .next-event-facts.ifacts.ifacts-ticket { grid-template-columns: 1fr; } .ifacts-ticket li, .ifacts-ticket li:nth-child(odd) { border-left: 0; } .ifacts-ticket li + li { border-top: 2px dashed rgba(73, 12, 20, 0.3); } .next-event-facts.ifacts-ticket li:last-child { grid-column: auto; } }
+/* Pódium: zelený lístok 2 × 2 pod fotkou */
+.ifacts.ifacts-ticket.ifacts-lime { background: var(--lime); box-shadow: none; margin-top: 22px; }
+.ifacts-lime li { display: block; }
+.ifacts-lime .label { margin: 0 0 4px; }
+.ifacts.ifacts-ticket.ifacts-2x2 { grid-template-columns: 1fr 1fr; }
+.ifacts-2x2 li:nth-child(odd) { border-left: 0; }
+.ifacts-2x2 li:nth-child(n+3) { border-top: 2px dashed rgba(73, 12, 20, 0.3); }
+@media (max-width: 520px) { .ifacts.ifacts-ticket.ifacts-2x2 { grid-template-columns: 1fr 1fr; } .ifacts-2x2 li + li { border-top: 0; } .ifacts-2x2 li:nth-child(even) { border-left: 2px dashed rgba(73, 12, 20, 0.3); } .ifacts-2x2 li:nth-child(n+3) { border-top: 2px dashed rgba(73, 12, 20, 0.3); } .ifacts-2x2 li { padding: 16px 16px; } }
+@media (min-width: 1001px) { .ifacts.ifacts-ticket.show-facts-row { grid-template-columns: 1fr 1fr 0.8fr 1.35fr; } }

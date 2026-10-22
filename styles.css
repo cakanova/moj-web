@@ -1305,3 +1305,16 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .story-final { justify-content: center; gap: clamp(24px, 4vw, 48px); }
 .form-page-head { max-width: 900px; margin: 0 auto clamp(28px, 4vw, 44px); } .form-page-head .lead { margin: 14px 0 0; max-width: none; } .form-page-head h1 { margin-bottom: 8px; }
 .form-page-head-narrow { max-width: 640px; }
+/* Výhovorky ako chat */
+.excuse-phone { margin: 0 auto clamp(28px, 4vw, 40px); text-align: left; max-width: 400px; box-shadow: 8px 8px 0 var(--bordeaux); border: 2px solid var(--bordeaux); }
+.excuse-phone .bubble { font-size: 1.05rem; }
+.excuse-phone .struck-msg p { text-decoration: line-through; text-decoration-thickness: 2px; text-decoration-color: var(--lime); }
+.excuse-phone .go-msg { background: var(--lime); color: var(--bordeaux); font-family: "Caveat", cursive; font-weight: 700; font-size: 2.2rem; line-height: 1; padding: 10px 22px 12px; transform: rotate(-3deg); margin-top: 6px; }
+.chat-seen { align-self: flex-end; font-size: .75rem; opacity: .6; margin: 0 4px; }
+.excuse-phone.anim .chat > * { opacity: 0; transform: translateY(10px); }
+.excuse-phone.anim .go-msg { transform: translateY(10px) rotate(-3deg); }
+.excuse-phone.play .chat > * { opacity: 1; transform: none; transition: opacity .35s ease, transform .35s ease; }
+.excuse-phone.play .go-msg { transform: rotate(-3deg); }
+.excuse-phone.play .chat > :nth-child(2) { transition-delay: .3s; } .excuse-phone.play .chat > :nth-child(3) { transition-delay: .9s; }
+.excuse-phone.play .chat > :nth-child(4) { transition-delay: 1.5s; } .excuse-phone.play .chat > :nth-child(5) { transition-delay: 2.3s; }
+.excuse-phone.play .chat > :nth-child(6) { transition-delay: 2.8s; }

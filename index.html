@@ -9,7 +9,7 @@
   <link rel="preload" href="fonts/texgyreadventor-bold.otf" as="font" type="font/otf" crossorigin>
   <link rel="icon" type="image/png" href="favicon.png?v=3">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=3">
-  <link rel="stylesheet" href="styles.css?v=162">
+  <link rel="stylesheet" href="styles.css?v=163">
 </head>
 <body>
 
@@ -261,9 +261,17 @@
 
     <section class="section excuses">
       <div class="wrap">
-        <p class="hand struck">Nemám s kým ísť.</p>
-        <p class="hand struck">Možno nabudúce.</p>
-        <span class="hand go">Idem!</span>
+        <div class="phone excuse-phone" aria-label="Chat s výhovorkami">
+          <div class="phone-head"><span class="av">?</span><div><strong>Ja a moje výhovorky 🙃</strong><span>píše…</span></div></div>
+          <div class="chat">
+            <p class="chat-day">Piatok 18:12</p>
+            <div class="bubble me struck-msg"><p>Nemám s kým ísť.</p></div>
+            <div class="bubble me struck-msg"><p>Možno nabudúce.</p></div>
+            <div class="bubble me struck-msg"><p>Nikoho tam nepoznám…</p></div>
+            <div class="bubble me go-msg"><p>Idem!</p></div>
+            <p class="chat-seen">Prečítané ✓✓</p>
+          </div>
+        </div>
         <p class="excuses-line">Príď sám, aj keď so strachom či pochybnosťami. Odídeš so zážitkami!</p>
         <a href="chystame.html" class="btn btn-primary">Pozrieť eventy</a>
       </div>
@@ -295,6 +303,12 @@
       header.classList.remove('menu-open');
       toggle.setAttribute('aria-expanded', false);
     }));
+    // chat výhovoriek: správy sa postupne objavia
+    const ex = document.querySelector('.excuse-phone');
+    if (ex && 'IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      ex.classList.add('anim');
+      new IntersectionObserver((en, o) => { if (en[0].isIntersecting) { ex.classList.add('play'); o.disconnect(); } }, { threshold: .4 }).observe(ex);
+    }
   </script>
 </body>
 </html>

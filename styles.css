@@ -1412,3 +1412,12 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 }
 @media (min-width: 1200px) { .ifacts strong { white-space: nowrap; } }
 @media (min-width: 1200px) { .ifacts { display: flex; flex-wrap: nowrap; } .ifacts li { flex: 0 1 auto; padding: 4px 30px; } .ifacts li:first-child { padding-left: 0; } }
+/* Údaje o evente ako jeden lístok (varianta A) */
+.ifacts.ifacts-ticket { display: grid; grid-template-columns: repeat(var(--n, 4), minmax(0, 1fr)); background: #fff; color: var(--bordeaux); border-radius: 22px; box-shadow: 0 10px 30px rgba(73, 12, 20, 0.08); }
+.ifacts-ticket .ifact-ic { display: none; }
+.ifacts-ticket li, .ifacts-ticket li:first-child { padding: 20px 26px; border-left: 2px dashed rgba(73, 12, 20, 0.3); }
+.ifacts-ticket li:first-child { border-left: 0; }
+.ifacts-ticket .label { color: var(--bordeaux); opacity: .7; }
+.ifacts-ticket strong { white-space: normal; }
+@media (max-width: 1000px) { .ifacts.ifacts-ticket { grid-template-columns: 1fr 1fr; gap: 0; } .ifacts-ticket li:nth-child(odd) { border-left: 0; } .ifacts-ticket li:nth-child(n+3) { border-top: 2px dashed rgba(73, 12, 20, 0.3); } .next-event-facts.ifacts-ticket li:last-child { grid-column: span 2; } }
+@media (max-width: 520px) { .ifacts.ifacts-ticket, .next-event-facts.ifacts.ifacts-ticket { grid-template-columns: 1fr; } .ifacts-ticket li, .ifacts-ticket li:nth-child(odd) { border-left: 0; } .ifacts-ticket li + li { border-top: 2px dashed rgba(73, 12, 20, 0.3); } .next-event-facts.ifacts-ticket li:last-child { grid-column: auto; } }

@@ -1378,3 +1378,6 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .tk-body { min-width: 0; overflow-wrap: break-word; }
 .tk:not(.tk-hot) .accent-lime { color: var(--bordeaux); }
 @media (max-width: 600px) { .tk { grid-template-columns: 76px minmax(0, 1fr); } .tk::before, .tk::after { left: 67px; } .tk-dd { font-size: 38px; } .tk-dd-soon { font-size: 22px; } .tk-body { padding: 20px 18px; } }
+.calendar.calendar-tickets { grid-template-columns: repeat(2, 1fr); gap: 26px; }
+@media (min-width: 961px) { .tk { grid-template-columns: 120px minmax(0, 1fr); } .tk::before, .tk::after { left: 111px; } .tk-dd { font-size: 56px; } .tk-dd-soon { font-size: 30px; } .tk-body { padding: 30px 34px 30px; } }
+@media (max-width: 960px) { .calendar.calendar-tickets { grid-template-columns: 1fr; } }

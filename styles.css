@@ -1333,3 +1333,7 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 #na-podium .actions { margin-top: 32px; }
 .show-side-note { color: var(--cream); }
 @media (min-width: 801px) { .show-side-note { text-align: left; } }
+/* Farebný kód: pódium = zelená, publikum = fialová */
+.path.path-dark h3 { color: var(--lavender); }
+.path.path-dark .btn { background: var(--lavender); border-color: var(--lavender); color: var(--bordeaux); }
+.ticket-form-only.ticket-form-lav { background: var(--lavender); }

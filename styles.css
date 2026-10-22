@@ -1381,3 +1381,9 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .calendar.calendar-tickets { grid-template-columns: repeat(2, 1fr); gap: 26px; }
 @media (min-width: 961px) { .tk { grid-template-columns: 120px minmax(0, 1fr); } .tk::before, .tk::after { left: 111px; } .tk-dd { font-size: 56px; } .tk-dd-soon { font-size: 30px; } .tk-body { padding: 30px 34px 30px; } }
 @media (max-width: 960px) { .calendar.calendar-tickets { grid-template-columns: 1fr; } }
+/* Eventy: zelený diel + štítok, SINGLES SHOW bordová s fialovou */
+.tk .tk-stub { background: var(--lime); }
+.tk-chip { background: var(--lime); color: var(--bordeaux); }
+.tk-hot .tk-stub { background: var(--lavender); }
+.tk-hot .tk-chip { background: var(--lavender); color: var(--bordeaux); }
+.tk-hot .accent-lime, .tk-hot .cal-link { color: var(--lavender); }

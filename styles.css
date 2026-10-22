@@ -1483,3 +1483,15 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 /* Domov: dlhší nadpis v hero */
 .hero h1.hero-title.hero-title-long { font-size: clamp(2rem, 3.4vw, 3.2rem); line-height: 1.08; }
 .hero-title-end { display: block; margin-top: .25em; }
+/* Domov: hero na stred – nadpis, veľká fotka, citát */
+.hero.hero-center .wrap { display: block; text-align: center; }
+.hero-center-head { max-width: 980px; margin: 0 auto; }
+.hero-center .hero-title.hero-title-long { font-size: clamp(2.1rem, 4.4vw, 3.8rem); }
+.hero-center .hero-photo.hero-photo-wide { max-width: 1040px; margin: clamp(32px, 5vw, 56px) auto 0; justify-self: auto; padding: 0 0 60px; }
+.hero-center .hero-photo-wide .hero-img { aspect-ratio: 3 / 2; object-position: center; }
+.hero-center .ticket-new { left: -32px; bottom: 0; width: min(340px, 60%); }
+.hero-center-foot { max-width: 720px; margin: clamp(8px, 2vw, 20px) auto 0; }
+.hero-center .hand-note.hero-note { display: inline-block; margin: 0 0 22px; }
+.hero-center .lead { margin-left: auto; margin-right: auto; }
+.hero-center .actions { justify-content: center; }
+@media (max-width: 700px) { .hero-center .hero-photo.hero-photo-wide { margin-left: 0; } .hero-center .ticket-new { left: -10px; width: min(240px, 70%); } .hero-center .hero-photo-wide .hero-img { aspect-ratio: 4 / 3; } }

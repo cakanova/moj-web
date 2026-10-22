@@ -1446,3 +1446,15 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .podium-steps-section .steps li::before { content: counter(step, decimal-leading-zero); display: block; width: auto; height: auto; border-radius: 0; background: none; color: var(--lime); font-family: var(--font-display); font-weight: 700; -webkit-text-stroke: .02em currentColor; font-size: clamp(4.5rem, 7vw, 6rem); line-height: .8; margin-bottom: 18px; }
 .podium-steps-section .steps li::before { font-size: clamp(3rem, 4.7vw, 4rem); margin-bottom: 14px; }
 @media (min-width: 901px) { #pravidla .tickets-grid { align-items: center; } }
+/* Piliere: biele karty s farebnou hlavičkou */
+.pillars { gap: 22px; }
+.pillar.pillar-card { background: #fff; color: var(--bordeaux); padding: 0; min-height: 0; gap: 0; justify-content: flex-start; border-radius: 28px; overflow: hidden; box-shadow: 0 14px 40px rgba(73, 12, 20, 0.08); }
+.pillar-top { position: relative; height: 200px; display: grid; place-items: center; }
+.pillar-card .pillar-art { position: static; width: auto; height: 150px; max-width: 70%; object-fit: contain; margin: 0; }
+.pillar-chip { position: absolute; left: 20px; top: 18px; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; padding: 6px 12px; border-radius: 999px; background: rgba(255, 255, 255, 0.55); color: var(--bordeaux); }
+.pillar-top.bg-dark .pillar-chip { background: rgba(255, 244, 234, 0.14); color: var(--cream); }
+.pillar-bd { padding: 26px 30px 32px; }
+.pillar-card h3 { font-size: clamp(1.6rem, 2.4vw, 1.9rem); line-height: 1.05; margin: 0 0 12px; color: var(--bordeaux); }
+.pillar-card h3 span { color: var(--bordeaux); }
+.pillar-card p { line-height: 1.6; }
+@media (max-width: 700px) { .pillar-top { height: 170px; } .pillar-card .pillar-art { height: 125px; } }

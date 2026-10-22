@@ -1387,3 +1387,7 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .tk-hot .tk-stub { background: var(--lavender); }
 .tk-hot .tk-chip { background: var(--lavender); color: var(--bordeaux); }
 .tk-hot .accent-lime, .tk-hot .cal-link { color: var(--lavender); }
+/* Eventy: výraznejšie mesiace, rovnaký formát pri neurčenom termíne */
+.tk-mm { font-family: var(--font-display); font-weight: 700; -webkit-text-stroke: .015em currentColor; font-size: 20px; letter-spacing: .08em; margin-top: 8px; }
+.tk-tbd { font-size: 12px; font-weight: 600; opacity: .75; }
+@media (min-width: 961px) { .tk-mm { font-size: 24px; } }

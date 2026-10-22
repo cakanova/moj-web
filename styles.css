@@ -1329,3 +1329,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .phone-head .av-letter { width: 42px; height: 42px; border-radius: 50%; background: var(--lime); color: var(--bordeaux); display: flex; align-items: center; justify-content: center; font-weight: 700; flex: none; }
 @media (max-width: 800px) { .friend-chat-grid { grid-template-columns: 1fr; } }
 .podium-steps-section .podium-steps-head { margin-top: 0; }
+.show-side-note { color: var(--lime); font-size: clamp(1.7rem, 2.6vw, 2.2rem); line-height: 1.15; transform: rotate(-2deg); margin: 28px 0 0; text-align: center; }

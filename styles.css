@@ -1320,3 +1320,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .excuse-phone.play .chat > :nth-child(6) { transition-delay: 2.8s; }
 .excuse-phone .struck-msg p { text-decoration-thickness: 1.5px; text-decoration-color: rgba(215, 220, 56, 0.55); }
 .excuse-phone .go-msg { background: #d7dc38; }
+.excuse-phone { margin-bottom: 0; }

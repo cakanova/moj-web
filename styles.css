@@ -1350,3 +1350,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .excuse-phone .struck-msg p { text-decoration-color: rgba(255, 244, 234, 0.6); }
 .excuse-phone .bubble.me.struck-msg { background: #efefef; color: #262626; }
 .excuse-phone .struck-msg p { text-decoration-thickness: 1px; text-decoration-color: rgba(38, 38, 38, 0.4); }
+.excuse-phone .struck-msg p { text-decoration-color: rgba(73, 12, 20, 0.6); }

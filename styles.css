@@ -1184,7 +1184,7 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .myth-list { display: grid; gap: 16px; }
 .myth-card { display: grid; grid-template-columns: 1fr 1.3fr; background: #fff; border-radius: 22px; overflow: hidden; color: var(--bordeaux); }
 .myth-side { background: var(--bordeaux); color: var(--cream); padding: clamp(22px, 3vw, 32px); }
-.myth-side h3 { color: var(--lime); font-size: clamp(1.3rem, 2.2vw, 1.75rem); margin: 0; line-height: 1.15; }
+.myth-side h3 { color: var(--lavender); font-size: clamp(1.3rem, 2.2vw, 1.75rem); margin: 0; line-height: 1.15; }
 .myth-side .label, .reality-side .label { margin: 0 0 10px; }
 .reality-side { padding: clamp(22px, 3vw, 32px); }
 .reality-side p:last-child { margin: 0; line-height: 1.6; }

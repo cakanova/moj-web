@@ -1495,3 +1495,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .hero-center .lead { margin-left: auto; margin-right: auto; }
 .hero-center .actions { justify-content: center; }
 @media (max-width: 700px) { .hero-center .hero-photo.hero-photo-wide { margin-left: 0; } .hero-center .ticket-new { left: -10px; width: min(240px, 70%); } .hero-center .hero-photo-wide .hero-img { aspect-ratio: 4 / 3; } }
+.hero-title-end { font-size: .62em; margin-top: .45em; }

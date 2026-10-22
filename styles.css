@@ -1351,3 +1351,30 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .excuse-phone .bubble.me.struck-msg { background: #efefef; color: #262626; }
 .excuse-phone .struck-msg p { text-decoration-thickness: 1px; text-decoration-color: rgba(38, 38, 38, 0.4); }
 .excuse-phone .struck-msg p { text-decoration-color: rgba(73, 12, 20, 0.6); }
+/* Eventy: karty ako lístky */
+.calendar-tickets { gap: 22px; align-items: stretch; }
+.tk { display: grid; grid-template-columns: 92px 1fr; background: #fff; color: var(--bordeaux); border-radius: 22px; position: relative; box-shadow: 0 14px 40px rgba(73, 12, 20, 0.10); overflow: hidden; }
+.tk-stub { background: var(--lavender); color: var(--bordeaux); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 18px 6px; border-right: 2px dashed rgba(73, 12, 20, 0.35); text-align: center; }
+.tk-lime .tk-stub, .tk-hot .tk-stub { background: var(--lime); }
+.tk-dd { font-family: var(--font-display); font-weight: 700; -webkit-text-stroke: .018em currentColor; font-size: 46px; line-height: 1; }
+.tk-dd-soon { font-size: 26px; }
+.tk-mm { font-weight: 700; letter-spacing: .14em; font-size: 13px; margin-top: 6px; }
+.tk-dw { font-size: 12px; opacity: .75; margin-top: 6px; }
+.tk-body { padding: 24px 24px 24px; display: flex; flex-direction: column; align-items: flex-start; }
+.tk-body h3 { font-size: clamp(1.6rem, 2.2vw, 1.9rem); margin: 10px 0 8px; }
+.tk-body p { margin: 0 0 12px; font-size: .97rem; line-height: 1.55; }
+.tk-body .tk-sub { font-weight: 700; }
+.tk-body .tk-place { margin: auto 0 0; padding-top: 6px; font-size: .9rem; font-weight: 700; }
+.tk-body .btn { margin-top: 18px; }
+.tk-chip { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; padding: 5px 10px; border-radius: 999px; background: rgba(73, 12, 20, 0.08); }
+.tk::before, .tk::after { content: ""; position: absolute; left: 83px; width: 18px; height: 18px; border-radius: 50%; background: var(--cream); }
+.tk::before { top: -9px; } .tk::after { bottom: -9px; }
+.tk-hot { background: var(--bordeaux); color: var(--cream); }
+.tk-hot h3 { color: var(--cream); }
+.tk-hot .tk-chip { background: var(--lime); color: var(--bordeaux); }
+.tk-hot .btn { background: var(--lavender); border-color: var(--lavender); color: var(--bordeaux); }
+.tk-hot .cal-link { color: var(--lime); }
+.tk { grid-template-columns: 92px minmax(0, 1fr); }
+.tk-body { min-width: 0; overflow-wrap: break-word; }
+.tk:not(.tk-hot) .accent-lime { color: var(--bordeaux); }
+@media (max-width: 600px) { .tk { grid-template-columns: 76px minmax(0, 1fr); } .tk::before, .tk::after { left: 67px; } .tk-dd { font-size: 38px; } .tk-dd-soon { font-size: 22px; } .tk-body { padding: 20px 18px; } }

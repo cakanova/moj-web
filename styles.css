@@ -1509,3 +1509,15 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .hero-split .hero-img { aspect-ratio: 4 / 3; }
 @media (max-width: 900px) { .hero.hero-split .wrap { grid-template-columns: 1fr; } }
 .hero-split .hand-note.hero-note { text-align: left; margin-left: 8px; }
+/* SINGLES SHOW: nový úvod – fotka vľavo, text vpravo */
+.show-intro { background: var(--bordeaux); color: var(--cream); }
+.show-intro-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(32px, 5vw, 64px); align-items: center; }
+.show-intro-photo img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 28px; display: block; }
+.show-intro h1 { color: var(--cream); margin: 0 0 14px; font-size: clamp(2.8rem, 6vw, 4.8rem); line-height: .95; }
+.show-intro .lead { color: var(--cream); margin: 0 0 24px; }
+.show-intro-label { color: var(--cream); opacity: .75; margin: 0 0 6px; }
+.show-intro-list li { border-bottom-color: rgba(255, 244, 234, 0.22); color: var(--cream); }
+.show-intro-hand { color: var(--lime); font-size: clamp(1.8rem, 3vw, 2.3rem); transform: rotate(-2deg); margin: 26px 0 6px; }
+.show-intro-note { margin: 0; opacity: .9; }
+.show-intro + .show-hero { padding-top: 0; }
+@media (max-width: 900px) { .show-intro-grid { grid-template-columns: 1fr; } }

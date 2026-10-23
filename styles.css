@@ -1554,3 +1554,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 @media (max-width: 1000px) { .pg-strip { grid-template-columns: 1fr 1fr; } .pg-strip li { border-left: 0; border-top: 2px dashed rgba(73, 12, 20, 0.2); } .pg-strip li:nth-child(-n+2) { border-top: 0; } .pg-strip li:nth-child(even) { border-left: 2px dashed rgba(73, 12, 20, 0.2); } .pg-strip li:last-child { grid-column: span 2; } }
 @media (max-width: 600px) { .pg-strip { grid-template-columns: 1fr; margin: -36px 10px 0; } .pg-strip li, .pg-strip li:nth-child(even) { border-left: 0; } .pg-strip li:nth-child(2) { border-top: 2px dashed rgba(73, 12, 20, 0.2); } .pg-strip li:last-child { grid-column: auto; } .pg-strip li { padding: 20px 20px 22px; } .pg-banner { height: 300px; } .pg-banner h2 { bottom: 52px; } }
 .pg-banner img { object-position: center 30%; }
+.pg-strip { margin-left: 0; margin-right: 0; } @media (max-width: 600px) { .pg-strip { margin-left: 0; margin-right: 0; } }

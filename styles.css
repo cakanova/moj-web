@@ -1525,3 +1525,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .show-intro-steps { list-style: none; margin: 8px 0 0; padding: 0; }
 .show-intro-steps li { display: grid; grid-template-columns: 56px 1fr; gap: 10px; padding: 14px 0; border-bottom: 1px solid rgba(255, 244, 234, 0.22); line-height: 1.55; }
 .si-num { font-family: var(--font-display); font-weight: 700; color: var(--lime); font-size: 1.15rem; line-height: 1.4; white-space: nowrap; }
+.show-intro-photo .show-intro-note { margin: 18px 4px 0; } .show-intro-list { margin-top: 6px; }

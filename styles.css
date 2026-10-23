@@ -1564,3 +1564,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .show-intro-light .show-intro-list li { border-bottom-color: rgba(73, 12, 20, 0.15); }
 .show-intro-light .show-intro-photo .show-intro-hand { color: var(--bordeaux); }
 .show-intro-light .next-event-inner { margin-top: clamp(40px, 6vw, 64px); }
+.show-intro-light .next-event-inner { border-top: 0; padding-top: 0; }

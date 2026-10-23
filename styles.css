@@ -1559,7 +1559,7 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 /* Domov: úvod SINGLES SHOW na krémovom pozadí */
 .show-intro.show-intro-light { background: var(--cream); color: var(--bordeaux); }
 .show-intro-light .show-intro-title { color: var(--bordeaux); margin: 0 0 14px; font-size: clamp(2.8rem, 6vw, 4.8rem); line-height: .95; }
-.show-intro-light .show-intro-title .accent-lime { color: var(--lavender); }
+.show-intro-light .show-intro-title .accent-lime { color: var(--bordeaux); }
 .show-intro-light .lead, .show-intro-light .show-intro-list li { color: var(--bordeaux); }
 .show-intro-light .show-intro-list li { border-bottom-color: rgba(73, 12, 20, 0.15); }
 .show-intro-light .show-intro-photo .show-intro-hand { color: var(--bordeaux); }

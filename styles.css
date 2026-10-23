@@ -1566,3 +1566,10 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .show-intro-light .next-event-inner { margin-top: clamp(40px, 6vw, 64px); }
 .show-intro-light .next-event-inner { border-top: 0; padding-top: 0; }
 #na-podium + .excuses { padding-top: 0; }
+/* Domov: Naša vízia + chat */
+.excuses-vision { text-align: left; }
+.vision-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
+.vision-text h2 { margin: 0 0 20px; }
+.vision-text .lead { margin: 0 0 16px; }
+.vision-chat .excuse-phone { margin: 0 auto; }
+@media (max-width: 900px) { .vision-grid { grid-template-columns: 1fr; } }

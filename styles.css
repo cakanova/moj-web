@@ -1504,3 +1504,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .hero-split .hero-img { aspect-ratio: 3 / 2; object-position: center; }
 .hero-split .hand-note.hero-note { display: block; text-align: center; margin: 22px 0 0; transform: rotate(-3deg); }
 @media (max-width: 900px) { .hero.hero-split .wrap { grid-template-columns: 1fr; } }
+#uvod + #co-je-unwaiting { padding-top: 0; }

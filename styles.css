@@ -1574,3 +1574,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .vision-chat .excuse-phone { margin: 0 auto; }
 @media (max-width: 900px) { .vision-grid { grid-template-columns: 1fr; } }
 #na-podium + #hviezda-vecera { padding-top: 0; } #hviezda-vecera + .excuses-vision { padding-top: 0; }
+#na-podium + .excuses-vision { padding-top: 0; }

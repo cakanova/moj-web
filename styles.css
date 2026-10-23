@@ -1521,3 +1521,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .show-intro-note { margin: 0; opacity: .9; }
 .show-intro + .show-hero { padding-top: 0; }
 @media (max-width: 900px) { .show-intro-grid { grid-template-columns: 1fr; } }
+.show-intro-grid { grid-template-columns: 1fr 1.05fr; } @media (max-width: 900px) { .show-intro-grid { grid-template-columns: 1fr; } }

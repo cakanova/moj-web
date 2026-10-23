@@ -1577,3 +1577,7 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 #na-podium + .excuses-vision { padding-top: 0; }
 #listky + .excuses-vision { padding-top: clamp(64px, 9vw, 112px); }
 .hero.hero-split h1.hero-title.hero-title-long { font-size: clamp(2.3rem, 3.75vw, 3.3rem); line-height: 1.04; }
+@media (min-width: 901px) {
+  .hero.hero-split .wrap { grid-template-columns: 1fr 1fr; }
+  .hero.hero-split h1.hero-title.hero-title-long { font-size: clamp(2.5rem, 4.3vw, 3.9rem); }
+}

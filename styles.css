@@ -1530,3 +1530,10 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .show-intro-photo .show-intro-hand { color: var(--cream); margin: 22px 0 0 6px; text-align: left; font-size: clamp(1.7rem, 2.6vw, 2.2rem); transform: rotate(-2deg); }
 .show-intro-photo .show-intro-hand + .show-intro-note { margin-top: 14px; }
 @media (max-width: 900px) { .show-intro-photo .show-intro-hand { text-align: center; margin-left: 0; } }
+/* SINGLES SHOW: program na krémovom pozadí */
+.ticket-only.show-hero.show-program { background: var(--cream); color: var(--bordeaux); }
+.show-intro + .show-hero.show-program { padding-top: clamp(64px, 9vw, 112px); }
+.show-program .show-title { color: var(--bordeaux); margin-bottom: 18px; }
+.show-program .included li { border-bottom-color: rgba(73, 12, 20, 0.15); color: var(--bordeaux); }
+.show-program .program-list a, .show-program .included li a { color: var(--bordeaux); text-decoration-color: rgba(73, 12, 20, 0.5); }
+.show-program .show-side-note { color: var(--bordeaux); }

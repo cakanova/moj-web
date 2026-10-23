@@ -1527,3 +1527,6 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .si-num { font-family: var(--font-display); font-weight: 700; color: var(--lime); font-size: 1.15rem; line-height: 1.4; white-space: nowrap; }
 .show-intro-photo .show-intro-note { margin: 18px 4px 0; } .show-intro-list { margin-top: 6px; }
 .show-intro .show-intro-grid { display: grid; } .show-intro .ifacts.show-facts-row { margin-top: clamp(32px, 5vw, 56px); }
+.show-intro-photo .show-intro-hand { color: var(--cream); margin: 22px 0 0 6px; text-align: left; font-size: clamp(1.7rem, 2.6vw, 2.2rem); transform: rotate(-2deg); }
+.show-intro-photo .show-intro-hand + .show-intro-note { margin-top: 14px; }
+@media (max-width: 900px) { .show-intro-photo .show-intro-hand { text-align: center; margin-left: 0; } }

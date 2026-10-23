@@ -1538,3 +1538,19 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .show-program .program-list a, .show-program .included li a { color: var(--bordeaux); text-decoration-color: rgba(73, 12, 20, 0.5); }
 .show-program .show-side-note { color: var(--bordeaux); }
 .program-list .pl-title { display: block; margin-bottom: 2px; }
+/* SINGLES SHOW: Ako to prebieha – veľká fotka + biely pruh s krokmi */
+.show-program-c { background: var(--cream); color: var(--bordeaux); }
+.pg-banner { position: relative; border-radius: 30px; overflow: hidden; height: clamp(300px, 36vw, 440px); }
+.pg-banner img { width: 100%; height: 100%; object-fit: cover; object-position: center 22%; display: block; }
+.pg-banner::after { content: ""; position: absolute; inset: 0; background: linear-gradient(transparent 40%, rgba(30, 5, 10, 0.78)); }
+.pg-banner h2 { position: absolute; left: clamp(22px, 4vw, 44px); bottom: clamp(56px, 7vw, 76px); z-index: 1; margin: 0; color: var(--cream); }
+.pg-strip { list-style: none; padding: 0; margin: -44px clamp(12px, 2vw, 24px) 0; position: relative; z-index: 2; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); background: #fff; border-radius: 24px; box-shadow: 0 18px 50px rgba(73, 12, 20, 0.12); }
+.pg-strip li { padding: 24px 20px 26px; border-left: 2px dashed rgba(73, 12, 20, 0.2); }
+.pg-strip li:first-child { border-left: 0; }
+.pg-ic { display: block; font-size: 26px; margin-bottom: 8px; }
+.pg-strip b { display: block; font-family: var(--font-display); font-size: 1.05rem; line-height: 1.2; margin-bottom: 6px; }
+.pg-strip b a { color: inherit; }
+.pg-strip p { margin: 0; font-size: .92rem; line-height: 1.55; }
+@media (max-width: 1000px) { .pg-strip { grid-template-columns: 1fr 1fr; } .pg-strip li { border-left: 0; border-top: 2px dashed rgba(73, 12, 20, 0.2); } .pg-strip li:nth-child(-n+2) { border-top: 0; } .pg-strip li:nth-child(even) { border-left: 2px dashed rgba(73, 12, 20, 0.2); } .pg-strip li:last-child { grid-column: span 2; } }
+@media (max-width: 600px) { .pg-strip { grid-template-columns: 1fr; margin: -36px 10px 0; } .pg-strip li, .pg-strip li:nth-child(even) { border-left: 0; } .pg-strip li:nth-child(2) { border-top: 2px dashed rgba(73, 12, 20, 0.2); } .pg-strip li:last-child { grid-column: auto; } .pg-strip li { padding: 20px 20px 22px; } .pg-banner { height: 300px; } .pg-banner h2 { bottom: 52px; } }
+.pg-banner img { object-position: center 30%; }

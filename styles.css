@@ -1635,4 +1635,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .cc-opt input { width: 18px; height: 18px; accent-color: var(--bordeaux); }
 .cc-actions { display: flex; flex-wrap: wrap; gap: 8px; }
 .cc-btn { flex: 1 1 auto; font: inherit; font-weight: 700; font-size: .9rem; padding: 10px 16px; border-radius: 999px; cursor: pointer; border: 2px solid var(--bordeaux); background: #fff; color: var(--bordeaux); }
-.cc-btn.cc-accept, .cc-btn.cc-reject { background: var(--bordeaux); color: var(--cream); }
+.cc-btn.cc-accept { background: var(--bordeaux); color: var(--cream); }

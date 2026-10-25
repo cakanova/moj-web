@@ -1606,3 +1606,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .trip-info { grid-template-columns: 1fr 1fr; align-items: start; }
 .trip-intro .lead { margin: 0; }
 .trip-box > :last-child { margin-bottom: 0; }
+.onas-cta { justify-content: center; margin-top: clamp(36px, 5vw, 56px); }

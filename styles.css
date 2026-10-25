@@ -1615,3 +1615,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .legal-text p { margin: 0 0 12px; line-height: 1.7; }
 .legal-text a { color: inherit; text-underline-offset: 3px; }
 .legal-list { margin: 0 0 12px; padding-left: 22px; line-height: 1.7; } .legal-list li { margin-bottom: 4px; }
+.rules-more { margin-top: 28px; }

@@ -1623,3 +1623,16 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .legal-table th { font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; }
 .legal-table td:first-child { font-family: ui-monospace, Menlo, monospace; font-size: .85rem; white-space: nowrap; }
 @media (max-width: 600px) { .legal-table td:first-child { white-space: normal; word-break: break-all; } }
+/* Lišta cookies */
+.cc-bar { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 1000; display: flex; justify-content: center; pointer-events: none; }
+.cc-inner { pointer-events: auto; max-width: 560px; width: 100%; background: #fff; color: var(--bordeaux); border-radius: 22px; padding: 20px 22px; box-shadow: 0 18px 50px rgba(73, 12, 20, 0.25); }
+.cc-title { font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; margin: 0 0 6px; }
+.cc-text { margin: 0 0 14px; font-size: .92rem; line-height: 1.55; }
+.cc-text a { color: inherit; text-underline-offset: 3px; }
+.cc-settings { display: grid; gap: 8px; margin: 0 0 14px; }
+.cc-settings[hidden] { display: none; }
+.cc-opt { display: flex; gap: 10px; align-items: center; font-size: .9rem; }
+.cc-opt input { width: 18px; height: 18px; accent-color: var(--bordeaux); }
+.cc-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.cc-btn { flex: 1 1 auto; font: inherit; font-weight: 700; font-size: .9rem; padding: 10px 16px; border-radius: 999px; cursor: pointer; border: 2px solid var(--bordeaux); background: #fff; color: var(--bordeaux); }
+.cc-btn.cc-accept, .cc-btn.cc-reject { background: var(--bordeaux); color: var(--cream); }

@@ -1602,3 +1602,4 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .trip-program { margin: 0; padding-left: 20px; line-height: 1.6; }
 .trip-program li { margin-bottom: 6px; }
 @media (max-width: 760px) { .trip-info { grid-template-columns: 1fr; } }
+.trip-reg { max-width: 900px; margin: 0 auto 20px; } .trip-reg h2 { margin: 0 0 8px; font-size: clamp(1.6rem, 3vw, 2.2rem); } .trip-reg .lead { margin: 0; }

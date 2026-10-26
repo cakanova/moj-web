@@ -1657,3 +1657,4 @@ a.footer-social-ic:hover { border-color: rgba(255, 244, 234, 0.45); }
 .footer-social-ic svg { width: 20px; height: 20px; }
 .site-footer .footer-contact .footer-social { justify-self: auto; } @media (max-width: 900px) { .footer-spacer { display: none; } }
 .gallery-sub { max-width: 760px; margin: -12px 0 clamp(28px, 4vw, 44px); } .gallery-sub .lead { color: var(--cream); margin: 0 0 8px; } .gallery-sub .lead:first-child { font-weight: 700; }
+.gallery-tag { margin: 18px 0 0; text-align: right; color: var(--cream); } @media (max-width: 700px) { .gallery-tag { text-align: left; } }

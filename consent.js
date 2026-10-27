@@ -1,7 +1,7 @@
 /* unwaiting – lišta so súhlasom s cookies (Google Consent Mode v2) */
 (function () {
   // Doplň ID, keď budú hotové účty. Kým je prázdne, nič sa nenačíta.
-  var GTM_ID = '';
+  var GTM_ID = 'GTM-N5B2X653';
 
   var NAME = 'uw_cookie_consent';
   var MAX_AGE = 60 * 60 * 24 * 182; // 6 mesiacov

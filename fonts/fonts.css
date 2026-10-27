@@ -4,14 +4,14 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(texgyreadventor-regular.otf) format('opentype');
+  src: url(texgyreadventor-regular.woff2) format('woff2');
 }
 @font-face {
   font-family: 'TeX Gyre Adventor';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(texgyreadventor-bold.otf) format('opentype');
+  src: url(texgyreadventor-bold.woff2) format('woff2');
 }
 /* latin-ext */
 @font-face {

@@ -18,11 +18,11 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#fff4ea">
-  <link rel="preload" href="fonts/texgyreadventor-bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="fonts/texgyreadventor-bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" type="image/png" href="favicon.png?v=3">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=3">
-  <link rel="stylesheet" href="styles.css?v=264">
-  <script src="consent.js?v=2"></script>
+  <link rel="stylesheet" href="styles.css?v=265">
+  <script src="consent.js?v=2" defer></script>
 </head>
 <body>
 
@@ -82,7 +82,7 @@
           </ul>
         </div>
         <div class="show-intro-photo">
-          <img src="img/show-hero-aperio.jpg" alt="Moderátorka v bare s mikrofónom ukazuje na plátno s fotkami, publikum sedí pri sviečkach" width="1400" height="933">
+          <img fetchpriority="high" src="img/show-hero-aperio.webp" srcset="img/show-hero-aperio-800.webp 800w, img/show-hero-aperio.webp 1400w" sizes="(max-width: 760px) 100vw, 50vw" alt="Moderátorka v bare s mikrofónom ukazuje na plátno s fotkami, publikum sedí pri sviečkach" width="1400" height="933">
           <p class="hand show-side-note show-intro-hand">Žiadne neosobné profily z appky ani nekonečné swipovanie.</p>
         </div>
       </div>
@@ -97,7 +97,7 @@
     <section class="section show-program-c" id="program">
       <div class="wrap">
         <div class="pg-banner">
-          <img src="img/podium-mikrofon.jpg?v=2" alt="Kamoš na pódiu s mikrofónom predstavuje svojho single kamaráta" width="800" height="1200" loading="lazy">
+          <img src="img/podium-mikrofon.webp?v=2" alt="Kamoš na pódiu s mikrofónom predstavuje svojho single kamaráta" width="800" height="1200" loading="lazy">
           <h2>Ako to prebieha</h2>
         </div>
         <ol class="pg-strip">
@@ -168,7 +168,7 @@
             </div>
           </div>
           <div class="hero-photo podium-photo">
-            <img class="hero-img" src="img/podium-prezentacia.jpg?v=3" alt="Kamarát na pódiu s mikrofónom predstavuje svojho single kamaráta, za nimi plátno s obrázkami jeho záľub" width="1000" height="1500">
+            <img class="hero-img" loading="lazy" src="img/podium-prezentacia.webp?v=3" alt="Kamarát na pódiu s mikrofónom predstavuje svojho single kamaráta, za nimi plátno s obrázkami jeho záľub" width="1000" height="1500">
             <ul class="ifacts ifacts-ticket ifacts-lime ifacts-2x2">
               <li><p class="label">Na pódiu</p><strong>5 žien + 5 mužov</strong></li>
               <li><p class="label">Prezentácia</p><strong>max. 5 minút</strong></li>
@@ -188,7 +188,7 @@
           <p class="hand friend-chat-note">Nestrácaj čas na zoznamovacích appkách, u nás to vybavíš po známosti.</p>
         </div>
         <div class="phone friend-phone" aria-label="Ukážkový chat s kamoškou">
-          <div class="phone-head"><img class="av av-photo" src="img/zuzka-avatar.jpg" alt="" width="80" height="80"><div><strong>Zuzka 💃</strong><span>online</span></div></div>
+          <div class="phone-head"><img class="av av-photo" src="img/zuzka-avatar.webp" alt="" width="80" height="80"><div><strong>Zuzka 💃</strong><span>online</span></div></div>
           <div class="chat">
             <p class="chat-day">Dnes 20:31</p>
             <div class="bubble her"><p>Tak som ťa prihlásila na pódium 😈</p></div>

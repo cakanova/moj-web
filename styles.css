@@ -1420,8 +1420,8 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .excuse-phone.play .chat > * { opacity: 1; transform: none; transition: opacity .35s ease, transform .35s ease; }
 .excuse-phone.play .go-msg { transform: rotate(-3deg); }
 .excuse-phone.play .chat > :nth-child(2) { transition-delay: .3s; } .excuse-phone.play .chat > :nth-child(3) { transition-delay: .9s; }
-.excuse-phone.play .chat > :nth-child(4) { transition-delay: 1.5s; } .excuse-phone.play .chat > :nth-child(5) { transition-delay: 2.3s; }
-.excuse-phone.play .chat > :nth-child(6) { transition-delay: 2.8s; }
+.excuse-phone.play .chat > :nth-child(4) { transition-delay: 1.5s; } .excuse-phone.play .chat > :nth-child(5) { transition-delay: 2.1s; }
+.excuse-phone.play .chat > :nth-child(6) { transition-delay: 2.9s; }
 .excuse-phone .struck-msg p { text-decoration-thickness: 1.5px; text-decoration-color: rgba(215, 220, 56, 0.55); }
 .excuse-phone .go-msg { background: #d7dc38; }
 .excuse-phone { margin-bottom: 0; }
@@ -1675,6 +1675,7 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .vision-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
 .vision-text h2 { margin: 0 0 20px; }
 .vision-text .lead { margin: 0 0 16px; }
+.vision-text .vision-cta { margin-top: 16px; }
 .vision-chat .excuse-phone { margin: 0 auto; }
 @media (max-width: 900px) { .vision-grid { grid-template-columns: 1fr; } }
 #na-podium + #hviezda-vecera { padding-top: 0; } #hviezda-vecera + .excuses-vision { padding-top: 0; }

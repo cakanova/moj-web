@@ -1675,7 +1675,11 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 .vision-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
 .vision-text h2 { margin: 0 0 20px; }
 .vision-text .lead { margin: 0 0 16px; }
-.vision-text .vision-cta { margin-top: 16px; }
+.excuse-phone .go-link { display: block; max-width: 92%; font-size: 2rem; line-height: 1.05; text-align: right; text-decoration: none; cursor: pointer; transition: transform .2s ease, box-shadow .2s ease; box-shadow: 0 6px 0 var(--bordeaux); }
+.excuse-phone.play .go-link:hover, .excuse-phone .go-link:hover { transform: rotate(-3deg) translateY(-3px); box-shadow: 0 9px 0 var(--bordeaux); }
+.excuse-phone .go-link .nw { white-space: nowrap; }
+.excuse-phone .go-link p::after { content: "\00a0→"; font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: .7em; }
+.excuse-phone.done .chat > .go-link { transition: transform .2s ease, box-shadow .2s ease; transition-delay: 0s; }
 .vision-chat .excuse-phone { margin: 0 auto; }
 @media (max-width: 900px) { .vision-grid { grid-template-columns: 1fr; } }
 #na-podium + #hviezda-vecera { padding-top: 0; } #hviezda-vecera + .excuses-vision { padding-top: 0; }

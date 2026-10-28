@@ -21,7 +21,7 @@
   <link rel="preload" href="fonts/texgyreadventor-bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" type="image/png" href="favicon.png?v=3">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=3">
-  <link rel="stylesheet" href="styles.css?v=267">
+  <link rel="stylesheet" href="styles.css?v=269">
   <script src="consent.js?v=2" defer></script>
 </head>
 <body>
@@ -229,18 +229,17 @@
           <h2>Naša vízia</h2>
           <p class="lead">unwaiting je komunita pre single ľudí, ktorí nečakajú na „ideálny moment“, ale tvoria si ho – pretože tie najlepšie veci zažívaš offline.</p>
           <p class="lead">Organizujeme eventy, výlety a&nbsp;zážitky, ktoré spájajú skvelých ľudí. Vytvárame prostredie, kde sa nikto necíti sám, vznikajú ozajstné priateľstvá a&nbsp;zoznamovanie dáva opäť zmysel.</p>
-          <a href="https://tootoot.fm/sk/events/6adf2d3cd12d8fff43564e34" class="btn btn-primary vision-cta">Idem na SINGLES SHOW</a>
         </div>
         <div class="vision-chat">
           <div class="phone excuse-phone" aria-label="Chat s výhovorkami">
           <div class="phone-head"><img class="av av-photo" src="img/lucia-avatar.webp" alt="" width="80" height="80"><div><strong>Ja a moje pochybnosti 🙃</strong><span>píše…</span></div></div>
           <div class="chat">
             <p class="chat-day">Piatok 18:12</p>
-            <div class="bubble me struck-msg"><p>Nemám s kým ísť.</p></div>
-            <div class="bubble me struck-msg"><p>Možno nabudúce.</p></div>
             <div class="bubble me struck-msg"><p>Nikoho tam nepoznám…</p></div>
             <div class="bubble me struck-msg"><p>Bude to trápne…</p></div>
-            <div class="bubble me go-msg"><p>Idem!</p></div>
+            <div class="bubble me struck-msg"><p>Nemám s kým ísť.</p></div>
+            <div class="bubble me struck-msg"><p>Možno nabudúce.</p></div>
+            <a class="bubble me go-msg go-link" href="https://tootoot.fm/sk/events/6adf2d3cd12d8fff43564e34"><p>Idem na <span class="nw">SINGLES&nbsp;SHOW!</span></p></a>
           </div>
         </div>
       </div>
@@ -286,7 +285,7 @@
     const ex = document.querySelector('.excuse-phone');
     if (ex && 'IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
       ex.classList.add('anim');
-      new IntersectionObserver((en, o) => { if (en[0].isIntersecting) { ex.classList.add('play'); o.disconnect(); } }, { threshold: .4 }).observe(ex);
+      new IntersectionObserver((en, o) => { if (en[0].isIntersecting) { ex.classList.add('play'); setTimeout(() => ex.classList.add('done'), 3400); o.disconnect(); } }, { threshold: .4 }).observe(ex);
     }
   </script>
 </body>

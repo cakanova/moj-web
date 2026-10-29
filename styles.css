@@ -1771,3 +1771,5 @@ a.footer-social-ic:hover { border-color: rgba(255, 244, 234, 0.45); }
 .gallery-sub { max-width: 760px; margin: -12px 0 clamp(28px, 4vw, 44px); } .gallery-sub .lead { color: var(--cream); margin: 0 0 8px; } .gallery-sub .lead { font-weight: 400; }
 .gallery-tag { margin: 18px 0 0; text-align: right; color: var(--cream); } @media (max-width: 700px) { .gallery-tag { text-align: left; } }
 .pres-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 6px 0 12px; } .pres-compare figure { margin: 0; } .pres-compare img { width: 100%; height: auto; display: block; border-radius: 18px; } @media (max-width: 700px) { .pres-compare { grid-template-columns: 1fr; } } .legal-wrap:has(.pres-compare) { max-width: 1000px; }
+.ifacts .stars { display: flex; gap: 3px; margin-top: 4px; }
+.ifacts .stars svg { width: 26px; height: 26px; fill: var(--bordeaux); }

@@ -1692,7 +1692,7 @@ h1.dict-term { font-size: clamp(2.5rem, 6.5vw, 5rem); margin-bottom: 0; }
 }
 @media (min-width: 901px) { .podium-block { align-items: stretch; } .podium-block .hero-photo.podium-photo { display: flex; flex-direction: column; justify-content: space-between; } .podium-block .podium-photo .ifacts-2x2 { margin-top: 24px; } }
 .show-intro-light .show-intro-photo img { aspect-ratio: 4 / 5; object-position: center 30%; } @media (max-width: 900px) { .show-intro-light .show-intro-photo img { aspect-ratio: 4 / 4.4; } }
-@media (max-width: 700px) { .gallery { display: block; } .gallery img { display: none; } .gallery img.g-wide { display: block; height: auto; aspect-ratio: 4 / 3; } }
+@media (max-width: 700px) { .gallery { display: block; } .gallery img { display: none; } .gallery img.g-tall { display: block; height: auto; aspect-ratio: 4 / 5; object-position: 50% 75%; } }
 /* Pätička: právne odkazy bez podčiarknutia */
 .footer-legal a { text-decoration: none; color: inherit; }
 .footer-legal a:hover { opacity: .75; }

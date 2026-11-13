@@ -50,15 +50,7 @@
     <div class="wrap">
       <a href="./" class="logo" aria-label="unwaiting – domov"><img src="img/logo-unwaiting.svg" alt="unwaiting" width="918" height="230"></a>
       <nav class="nav" aria-label="Hlavná navigácia">
-        <div class="nav-links" id="menu">
-          <a href="chystame.html">Eventy</a>
-          <a href="slovnik.html">Bez filtra</a>
-          <a href="o-nas.html">O nás</a>
-        </div>
         <a href="single-show.html" class="btn btn-primary">SINGLES SHOW</a>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Otvoriť menu">
-          <span></span><span></span><span></span>
-        </button>
       </nav>
     </div>
   </header>
@@ -116,7 +108,7 @@
 
           <h2>Ďalšie tipy</h2>
           <p>Ďalšie nápady a inšpiráciu nájdeš na našom <a href="https://www.instagram.com/unwaiting.sk/" target="_blank" rel="noopener">Instagrame</a> v uložených stories.</p>
-          <p>Pravidlá správania na akcii nájdeš v <a href="pravidla-ucasti.html">pravidlách účasti</a>. Prihlásiť sa na pódium môžeš cez <a href="prihlaska-na-podium.html">prihlášku na pódium</a>.</p>
+          <p>Prihlásiť sa na pódium môžeš cez <a href="prihlaska-na-podium.html">prihlášku na pódium</a>.</p>
         </div>
       </div>
     </section>
@@ -139,22 +131,9 @@
       </div>
     </div>
     <div class="wrap footer-bottom">
-      <small class="footer-legal">© 2026 unwaiting · <a href="obchodne-podmienky.html">Obchodné podmienky</a> · <a href="ochrana-osobnych-udajov.html">Ochrana osobných údajov</a> · <a href="cookies.html">Cookies</a> · <span class="nowrap">BIZNISOVO s.r.o.</span>, <span class="nowrap">17. novembra 84, 080&nbsp;01 Prešov</span>, <span class="nowrap">IČO: 56&nbsp;387&nbsp;547</span></small>
+      <small class="footer-legal">© 2026 unwaiting · <a href="cookies.html">Cookies</a></small>
     </div>
   </footer>
-  <script>
-    // mobilné menu
-    const toggle = document.querySelector('.nav-toggle');
-    const header = document.querySelector('.site-header');
-    toggle.addEventListener('click', () => {
-      const open = header.classList.toggle('menu-open');
-      toggle.setAttribute('aria-expanded', open);
-      toggle.setAttribute('aria-label', open ? 'Zavrieť menu' : 'Otvoriť menu');
-    });
-    document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => {
-      header.classList.remove('menu-open');
-      toggle.setAttribute('aria-expanded', false);
-    }));
-  </script>
+  
 </body>
 </html>
